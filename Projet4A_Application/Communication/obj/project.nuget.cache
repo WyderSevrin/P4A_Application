@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "FqEnLWn77fQw2YHnxom68FuOWwDYIj5ltU1EMATwexrZbgz1sNQQYusxZUERSsFXEEEJxv+E/piyFah4Hc1vHw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sevrin\\Desktop\\PROJET4A\\Projet4A_Application\\Communication\\Communication.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sevrin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Sevrin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

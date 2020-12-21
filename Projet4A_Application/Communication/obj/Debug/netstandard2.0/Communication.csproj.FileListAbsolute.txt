@@ -1,0 +1,8 @@
+C:\Users\Sevrin\Desktop\PROJET4A\Projet4A_Application\Communication\bin\Debug\netstandard2.0\Communication.deps.json
+C:\Users\Sevrin\Desktop\PROJET4A\Projet4A_Application\Communication\bin\Debug\netstandard2.0\Communication.dll
+C:\Users\Sevrin\Desktop\PROJET4A\Projet4A_Application\Communication\bin\Debug\netstandard2.0\Communication.pdb
+C:\Users\Sevrin\Desktop\PROJET4A\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.AssemblyInfoInputs.cache
+C:\Users\Sevrin\Desktop\PROJET4A\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.AssemblyInfo.cs
+C:\Users\Sevrin\Desktop\PROJET4A\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.csproj.CoreCompileInputs.cache
+C:\Users\Sevrin\Desktop\PROJET4A\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.dll
+C:\Users\Sevrin\Desktop\PROJET4A\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.pdb

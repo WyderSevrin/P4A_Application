@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projet4A_Application.Parametres">
+    <ContentPage.Content>
+        <FlexLayout Direction="Column" BackgroundColor="AntiqueWhite">
+
+            <Label Text="Paramêtres" TextColor="GhostWhite" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="DarkGreen" FlexLayout.Grow="0.2" />
+            <FlexLayout Direction="Column" FlexLayout.Grow="1">
+                <Label Text="Thèmes" TextColor="Black" FontSize="Large" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalOptions="Center" FlexLayout.AlignSelf="Center" FlexLayout.Grow="0.2"/>
+                <Button Text="Clair" Clicked="OnClairClick" FlexLayout.AlignSelf="Auto" FlexLayout.Grow="0.8" CornerRadius="20"/>
+                <Label FlexLayout.Grow="0.1"/>
+                <Button Text="Sombre" Clicked="OnSombreClick" FlexLayout.AlignSelf="Auto" FlexLayout.Grow="0.8" CornerRadius="20"/>
+            </FlexLayout>
+            <FlexLayout Direction="Column" FlexLayout.Grow="1">
+
+            </FlexLayout>
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

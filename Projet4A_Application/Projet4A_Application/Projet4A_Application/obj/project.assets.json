@@ -63,6 +63,29 @@
           "buildTransitive/Xamarin.Forms.props": {},
           "buildTransitive/Xamarin.Forms.targets": {}
         }
+      },
+      "Communication/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Communication.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Communication.dll": {}
+        }
+      },
+      "Modeles/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Communication": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Modeles.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Modeles.dll": {}
+        }
       }
     }
   },
@@ -618,10 +641,22 @@
         "xamarin.forms.4.6.0.1141.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "Communication/1.0.0": {
+      "type": "project",
+      "path": "../../Communication/Communication.csproj",
+      "msbuildProject": "../../Communication/Communication.csproj"
+    },
+    "Modeles/1.0.0": {
+      "type": "project",
+      "path": "../../Modeles/Modeles.csproj",
+      "msbuildProject": "../../Modeles/Modeles.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Communication >= 1.0.0",
+      "Modeles >= 1.0.0",
       "NETStandard.Library >= 2.0.3",
       "Xamarin.Essentials >= 1.5.3.2",
       "Xamarin.Forms >= 4.6.0.1141"
@@ -657,7 +692,14 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Sevrin\\Desktop\\PROJET4A\\Projet4A_Application\\Communication\\Communication.csproj": {
+              "projectPath": "C:\\Users\\Sevrin\\Desktop\\PROJET4A\\Projet4A_Application\\Communication\\Communication.csproj"
+            },
+            "C:\\Users\\Sevrin\\Desktop\\PROJET4A\\Projet4A_Application\\Modeles\\Modeles.csproj": {
+              "projectPath": "C:\\Users\\Sevrin\\Desktop\\PROJET4A\\Projet4A_Application\\Modeles\\Modeles.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

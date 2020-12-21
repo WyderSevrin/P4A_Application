@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projet4A_Application.Bibliotheque">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="DarkGreen">
+            <FlexLayout Direction="Row" AlignContent="Center" JustifyContent="SpaceBetween">
+                <Label Text="Bibliothèque" TextColor="White" FontSize="Title" FontAttributes="Bold" FlexLayout.AlignSelf="Center" />
+                <Button Text="Settings" FlexLayout.AlignSelf="End" Clicked="OnSettingsClick" />
+            </FlexLayout>
+            <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceEvenly">
+                <Picker x:Name="Genre_Picker" Title="GENRE" TitleColor="AntiqueWhite" FontSize="Large" FontAttributes="Bold" >
+                    <Picker.Items>
+                        <x:String>ROMAN</x:String>
+                        <x:String>POEME</x:String>
+                        <x:String>NOUVELLE</x:String>
+                        <x:String>PIECE DE THEATRE</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Picker x:Name="Mouvement_Picker" Title="MOUVEMENT" TitleColor="AntiqueWhite" FontSize="Large" FontAttributes="Bold" >
+                    <Picker.Items>
+                        <x:String>ROMANTISME</x:String>
+                        <x:String>NATURALISME</x:String>
+                    </Picker.Items>
+                </Picker>
+                <StackLayout Orientation="Horizontal">
+                    <CheckBox VerticalOptions="Center" Color="Aqua" />
+                    <Label Text="Favoris" FontSize="Large" FontAttributes="Bold" VerticalOptions="Center" TextColor="AntiqueWhite" />
+                </StackLayout>
+            </FlexLayout>
+            <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceEvenly">
+                <Picker x:Name="Ordre_Picker" Title="ORDRE" TitleColor="AntiqueWhite" FontSize="Large" FontAttributes="Bold" >
+                    <Picker.Items>
+                        <x:String>A --> Z</x:String>
+                        <x:String>Z --> A</x:String>
+                        <x:String>DATE CROISSANT</x:String>
+                        <x:String>DATE DECROISSANT</x:String>
+                    </Picker.Items>
+                </Picker>
+            </FlexLayout>
+            <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceEvenly">
+                <Entry Placeholder="Chercher Titre ou Auteur" PlaceholderColor="AntiqueWhite" FontSize="Large" FontAttributes="Bold"/>
+                <Button Text="OK"/>
+            </FlexLayout>
+            <ScrollView BackgroundColor="AntiqueWhite">
+                <StackLayout>
+                    <Button Clicked="GoReadPage"/>
+                    <Button Clicked="GoReadPage"/>
+                    <Button Clicked="GoReadPage"/>
+                    <Button Clicked="HtmlTestClicked"/>
+                    <Button/>
+                    <Button/>
+                    <Button/>
+                    <Button/>
+                    <Button/>
+                    <Button/>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

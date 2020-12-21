@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projet4A_Application.Profile_Livre">
+    <ContentPage.Content>
+        <FlexLayout Direction="Column" BackgroundColor="DarkSlateGray">
+            <Label Text="Nom du livre" TextColor="GhostWhite" BackgroundColor="DarkSlateBlue" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FlexLayout.Grow="0.1" />
+            <FlexLayout Direction="Row" FlexLayout.Grow="0.4">
+                <BoxView BackgroundColor="GhostWhite" FlexLayout.Grow="0.4"/>
+                <StackLayout Orientation="Vertical" BackgroundColor="DarkSlateGray" FlexLayout.Grow="0.6">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Titre" FontSize="Large" FontAttributes="Bold" TextColor="AntiqueWhite" VerticalTextAlignment="Center" HorizontalTextAlignment="Start"/>
+                        <Button Text="Favoris" Clicked="OnFavClick" HorizontalOptions="Center"/>
+                        <Label Text="Note" FontSize="Large" FontAttributes="Bold" TextColor="AntiqueWhite" VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+                    </StackLayout>
+                    <Label Text="aaaaaaaaaaaaaaaa"/>
+                </StackLayout>
+            </FlexLayout>
+            <FlexLayout FlexLayout.Grow="0.4">
+                <Label Text="Commentaire" TextColor="AntiqueWhite" FontSize="Title"/>
+            </FlexLayout>
+        </FlexLayout>
+    </ContentPage.Content>
+</ContentPage>

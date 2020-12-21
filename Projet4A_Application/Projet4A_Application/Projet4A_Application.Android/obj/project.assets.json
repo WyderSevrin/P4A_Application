@@ -784,10 +784,35 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Communication/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Communication.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Communication.dll": {}
+        }
+      },
+      "Modeles/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Communication": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Modeles.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Modeles.dll": {}
+        }
+      },
       "Projet4A_Application/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Communication": "1.0.0",
+          "Modeles": "1.0.0",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.6.0.1141"
         },
@@ -1915,6 +1940,16 @@
         "xamarin.forms.4.6.0.1141.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "Communication/1.0.0": {
+      "type": "project",
+      "path": "../../Communication/Communication.csproj",
+      "msbuildProject": "../../Communication/Communication.csproj"
+    },
+    "Modeles/1.0.0": {
+      "type": "project",
+      "path": "../../Modeles/Modeles.csproj",
+      "msbuildProject": "../../Modeles/Modeles.csproj"
     },
     "Projet4A_Application/1.0.0": {
       "type": "project",
