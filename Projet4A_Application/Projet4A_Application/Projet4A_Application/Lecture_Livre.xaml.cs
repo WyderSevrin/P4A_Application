@@ -14,7 +14,8 @@ namespace Projet4A_Application
     {
         public Lecture_Livre()
         {
-            InitializeComponent(); 
+            InitializeComponent();
+            this.yep.Uri = "Livres/test.pdf";
         }
 
         private void OnPreviousClick(object sender, EventArgs e)
