@@ -10,3 +10,15 @@ C:\Users\Sevrin\Desktop\PROJET4A\Projet4A_Application\Modeles\obj\Debug\netstand
 C:\Users\Sevrin\Desktop\PROJET4A\Projet4A_Application\Modeles\obj\Debug\netstandard2.0\Modeles.csproj.CopyComplete
 C:\Users\Sevrin\Desktop\PROJET4A\Projet4A_Application\Modeles\obj\Debug\netstandard2.0\Modeles.dll
 C:\Users\Sevrin\Desktop\PROJET4A\Projet4A_Application\Modeles\obj\Debug\netstandard2.0\Modeles.pdb
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Modeles\bin\Debug\netstandard2.0\Modeles.deps.json
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Modeles\bin\Debug\netstandard2.0\Modeles.dll
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Modeles\bin\Debug\netstandard2.0\Modeles.pdb
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Modeles\bin\Debug\netstandard2.0\Communication.dll
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Modeles\bin\Debug\netstandard2.0\Communication.pdb
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Modeles\obj\Debug\netstandard2.0\Modeles.csprojAssemblyReference.cache
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Modeles\obj\Debug\netstandard2.0\Modeles.AssemblyInfoInputs.cache
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Modeles\obj\Debug\netstandard2.0\Modeles.AssemblyInfo.cs
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Modeles\obj\Debug\netstandard2.0\Modeles.csproj.CoreCompileInputs.cache
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Modeles\obj\Debug\netstandard2.0\Modeles.csproj.CopyComplete
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Modeles\obj\Debug\netstandard2.0\Modeles.dll
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Modeles\obj\Debug\netstandard2.0\Modeles.pdb

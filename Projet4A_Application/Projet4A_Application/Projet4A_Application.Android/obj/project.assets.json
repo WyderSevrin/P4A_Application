@@ -1965,24 +1965,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sevrin\\.nuget\\packages\\": {},
+    "C:\\Users\\Mikrail\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sevrin\\Desktop\\PROJET4A\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\Projet4A_Application.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\Projet4A_Application.Android.csproj",
       "projectName": "Projet4A_Application.Android",
-      "projectPath": "C:\\Users\\Sevrin\\Desktop\\PROJET4A\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\Projet4A_Application.Android.csproj",
-      "packagesPath": "C:\\Users\\Sevrin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sevrin\\Desktop\\PROJET4A\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\obj\\",
+      "projectPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\Projet4A_Application.Android.csproj",
+      "packagesPath": "C:\\Users\\Mikrail\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Sevrin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mikrail\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1996,8 +1996,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\Sevrin\\Desktop\\PROJET4A\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj": {
-              "projectPath": "C:\\Users\\Sevrin\\Desktop\\PROJET4A\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj"
+            "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj": {
+              "projectPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj"
             }
           }
         }

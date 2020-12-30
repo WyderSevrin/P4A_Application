@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "SjQ1RYU1c3FDQzNan1qP4jOCaAHwd0uhDuqNgVc1R+ZhcQSqID/PxeS6Ya0m9Gfo3picSnnPlK9u2NAHj2pyqg==",
+  "dgSpecHash": "Wxd1jcQ7femtPd1jOgi2ITHi0tar1m3wJ95+fPgv1ABSNtAPn+DvlOjXJDr8fyYC7zJ1XJcdrFEDarVmetzJ4A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sevrin\\Desktop\\PROJET4A\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj",
+  "projectFilePath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Sevrin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Sevrin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Sevrin\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Mikrail\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Mikrail\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Mikrail\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
   ],

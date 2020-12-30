@@ -5,8 +5,8 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="DarkGreen">
             <FlexLayout Direction="Row" AlignContent="Center" JustifyContent="SpaceBetween">
-                <Label Text="Bibliothèque" TextColor="White" FontSize="Title" FontAttributes="Bold" FlexLayout.AlignSelf="Center" />
-                <Button Text="Settings" FlexLayout.AlignSelf="End" Clicked="OnSettingsClick" />
+                <Label Text="Bibliothèque" TextColor="White" FontSize="Title" FontAttributes="Bold" FlexLayout.AlignSelf="Center" Margin="10,0" Padding="0,10,0,0" />
+                <Button Text="Settings" FlexLayout.AlignSelf="End" Clicked="OnSettingsClick" Margin="10,10,10,0" />
             </FlexLayout>
             <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceEvenly">
                 <Picker x:Name="Genre_Picker" Title="GENRE" TitleColor="AntiqueWhite" FontSize="Large" FontAttributes="Bold" >
@@ -42,18 +42,9 @@
                 <Entry Placeholder="Chercher Titre ou Auteur" PlaceholderColor="AntiqueWhite" FontSize="Large" FontAttributes="Bold"/>
                 <Button Text="OK"/>
             </FlexLayout>
-            <ScrollView BackgroundColor="AntiqueWhite">
-                <StackLayout>
-                    <Button Clicked="GoReadPage"/>
-                    <Button Clicked="GoReadPage"/>
-                    <Button Clicked="GoReadPage"/>
-                    <Button Clicked="HtmlTestClicked"/>
-                    <Button/>
-                    <Button/>
-                    <Button/>
-                    <Button/>
-                    <Button/>
-                    <Button/>
+            <ScrollView x:Name="ScrollingItem" BackgroundColor="AntiqueWhite">
+                <StackLayout x:Uid="StackTest" x:Name="StackTest">
+
                 </StackLayout>
             </ScrollView>
         </StackLayout>

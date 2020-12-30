@@ -16,14 +16,23 @@ namespace Projet4A_Application
         {
             InitializeComponent();
         }
+
         private void OnClairClick(object sender, EventArgs e)
         {
-
+            if (UserSettings.DarkTheme == true)
+            {
+                UserSettings.DarkTheme = false;
+            }
+            Full_Layout.BackgroundColor = Color.LightGray;
         }
 
         private void OnSombreClick(object sender, EventArgs e)
         {
-
+            if (UserSettings.DarkTheme == false)
+            {
+                UserSettings.DarkTheme = true;
+            }
+            Full_Layout.BackgroundColor = Color.DarkSlateBlue;
         }
     }
 }

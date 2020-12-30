@@ -21,3 +21,49 @@ C:\Users\Sevrin\Desktop\PROJET4A\Projet4A_Application\Projet4A_Application\Proje
 C:\Users\Sevrin\Desktop\PROJET4A\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Projet4A_Application.dll
 C:\Users\Sevrin\Desktop\PROJET4A\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\ref\Projet4A_Application.dll
 C:\Users\Sevrin\Desktop\PROJET4A\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Projet4A_Application.pdb
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\bin\Debug\netstandard2.0\Projet4A_Application.deps.json
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\bin\Debug\netstandard2.0\Projet4A_Application.dll
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\bin\Debug\netstandard2.0\ref\Projet4A_Application.dll
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\bin\Debug\netstandard2.0\Projet4A_Application.pdb
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\bin\Debug\netstandard2.0\Communication.dll
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\bin\Debug\netstandard2.0\Modeles.dll
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\bin\Debug\netstandard2.0\Communication.pdb
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\bin\Debug\netstandard2.0\Modeles.pdb
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Projet4A_Application.csprojAssemblyReference.cache
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Bibliotheque.xaml.g.cs
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Lecture_Livre.xaml.g.cs
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Parametres.xaml.g.cs
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Profile_Livre.xaml.g.cs
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Projet4A_Application.AssemblyInfoInputs.cache
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Projet4A_Application.AssemblyInfo.cs
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Projet4A_Application.csproj.CoreCompileInputs.cache
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Projet4A_Application.csproj.CopyComplete
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Projet4A_Application.dll
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\ref\Projet4A_Application.dll
+C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Projet4A_Application.pdb
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\bin\Debug\netstandard2.0\Projet4A_Application.deps.json
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\bin\Debug\netstandard2.0\Projet4A_Application.dll
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\bin\Debug\netstandard2.0\ref\Projet4A_Application.dll
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\bin\Debug\netstandard2.0\Projet4A_Application.pdb
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\bin\Debug\netstandard2.0\Communication.dll
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\bin\Debug\netstandard2.0\Modeles.dll
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\bin\Debug\netstandard2.0\Communication.pdb
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\bin\Debug\netstandard2.0\Modeles.pdb
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Projet4A_Application.csprojAssemblyReference.cache
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Bibliotheque.xaml.g.cs
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Lecture_Livre.xaml.g.cs
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Parametres.xaml.g.cs
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Profile_Livre.xaml.g.cs
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Projet4A_Application.AssemblyInfoInputs.cache
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Projet4A_Application.AssemblyInfo.cs
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Projet4A_Application.csproj.CoreCompileInputs.cache
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Projet4A_Application.csproj.CopyComplete
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Projet4A_Application.dll
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\ref\Projet4A_Application.dll
+C:\Users\Mikrail\Documents\Projet4A_Application\Projet4A_Application\Projet4A_Application\obj\Debug\netstandard2.0\Projet4A_Application.pdb

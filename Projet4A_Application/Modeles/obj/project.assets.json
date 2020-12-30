@@ -196,23 +196,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sevrin\\.nuget\\packages\\": {},
+    "C:\\Users\\Mikrail\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sevrin\\Desktop\\PROJET4A\\Projet4A_Application\\Modeles\\Modeles.csproj",
+      "projectUniqueName": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Modeles\\Modeles.csproj",
       "projectName": "Modeles",
-      "projectPath": "C:\\Users\\Sevrin\\Desktop\\PROJET4A\\Projet4A_Application\\Modeles\\Modeles.csproj",
-      "packagesPath": "C:\\Users\\Sevrin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sevrin\\Desktop\\PROJET4A\\Projet4A_Application\\Modeles\\obj\\",
+      "projectPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Modeles\\Modeles.csproj",
+      "packagesPath": "C:\\Users\\Mikrail\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Modeles\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Sevrin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mikrail\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -226,8 +226,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Sevrin\\Desktop\\PROJET4A\\Projet4A_Application\\Communication\\Communication.csproj": {
-              "projectPath": "C:\\Users\\Sevrin\\Desktop\\PROJET4A\\Projet4A_Application\\Communication\\Communication.csproj"
+            "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Communication\\Communication.csproj": {
+              "projectPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Communication\\Communication.csproj"
             }
           }
         }
@@ -258,7 +258,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
