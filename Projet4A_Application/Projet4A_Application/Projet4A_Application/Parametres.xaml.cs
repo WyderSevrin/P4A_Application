@@ -15,6 +15,7 @@ namespace Projet4A_Application
         public Parametres()
         {
             InitializeComponent();
+            setTheme();
         }
 
         private void OnClairClick(object sender, EventArgs e)
@@ -34,5 +35,18 @@ namespace Projet4A_Application
             }
             Full_Layout.BackgroundColor = Color.DarkSlateBlue;
         }
+
+        public void setTheme()
+        {
+            if (UserSettings.DarkTheme == false)
+            {
+                Full_Layout.BackgroundColor = Color.LightGray;
+            }
+            else
+            {
+                Full_Layout.BackgroundColor = Color.DarkSlateBlue;
+            }
+        }
+
     }
 }

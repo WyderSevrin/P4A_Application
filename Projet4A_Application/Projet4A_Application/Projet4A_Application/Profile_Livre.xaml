@@ -11,7 +11,15 @@
                     <StackLayout Orientation="Horizontal">
                         <Button x:Name="ReadButton" Text="Read" Clicked="ReadButton_Clicked" HorizontalOptions="Center"/>
                         <Button x:Name="FavButton" Text="Favoris" Clicked="OnFavClick" HorizontalOptions="Center"/>
-                        <Label x:Name="NoteItem" Text="Note" FontSize="Large" FontAttributes="Bold" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+                        <Picker x:Name="NoteItem" Title="Note" FontSize="Large" FontAttributes="Bold" TextColor="Black">
+                            <Picker.Items>
+                                <x:String>1</x:String>
+                                <x:String>2</x:String>
+                                <x:String>3</x:String>
+                                <x:String>4</x:String>
+                                <x:String>5</x:String>
+                            </Picker.Items>
+                        </Picker>
                     </StackLayout>
                     <Label x:Name="DescriptionLabel" Text="aaaaaaaaaaaaaaaa" TextColor="Black" FontSize="Large"/>
                 </StackLayout>

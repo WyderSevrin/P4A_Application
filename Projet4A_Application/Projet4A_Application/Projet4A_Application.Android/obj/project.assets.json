@@ -1971,11 +1971,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\Projet4A_Application.Android.csproj",
+      "projectUniqueName": "D:\\VS\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\Projet4A_Application.Android.csproj",
       "projectName": "Projet4A_Application.Android",
-      "projectPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\Projet4A_Application.Android.csproj",
+      "projectPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\Projet4A_Application.Android.csproj",
       "packagesPath": "C:\\Users\\Mikrail\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\obj\\",
+      "outputPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1996,8 +1996,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj": {
-              "projectPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj"
+            "D:\\VS\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj": {
+              "projectPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj"
             }
           }
         }

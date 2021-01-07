@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\Projet4A_Application.Android.csproj": {}
+    "D:\\VS\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\Projet4A_Application.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Communication\\Communication.csproj": {
+    "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Communication\\Communication.csproj",
+        "projectUniqueName": "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj",
         "projectName": "Communication",
-        "projectPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Communication\\Communication.csproj",
+        "projectPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj",
         "packagesPath": "C:\\Users\\Mikrail\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Communication\\obj\\",
+        "outputPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Modeles\\Modeles.csproj": {
+    "D:\\VS\\P4A_Application\\Projet4A_Application\\Modeles\\Modeles.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Modeles\\Modeles.csproj",
+        "projectUniqueName": "D:\\VS\\P4A_Application\\Projet4A_Application\\Modeles\\Modeles.csproj",
         "projectName": "Modeles",
-        "projectPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Modeles\\Modeles.csproj",
+        "projectPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Modeles\\Modeles.csproj",
         "packagesPath": "C:\\Users\\Mikrail\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Modeles\\obj\\",
+        "outputPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Modeles\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -90,8 +90,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Communication\\Communication.csproj": {
-                "projectPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Communication\\Communication.csproj"
+              "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj": {
+                "projectPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj"
               }
             }
           }
@@ -126,14 +126,14 @@
         }
       }
     },
-    "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\Projet4A_Application.Android.csproj": {
+    "D:\\VS\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\Projet4A_Application.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\Projet4A_Application.Android.csproj",
+        "projectUniqueName": "D:\\VS\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\Projet4A_Application.Android.csproj",
         "projectName": "Projet4A_Application.Android",
-        "projectPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\Projet4A_Application.Android.csproj",
+        "projectPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\Projet4A_Application.Android.csproj",
         "packagesPath": "C:\\Users\\Mikrail\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\obj\\",
+        "outputPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -154,8 +154,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj": {
-                "projectPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj"
+              "D:\\VS\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj": {
+                "projectPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj"
               }
             }
           }
@@ -176,14 +176,14 @@
         }
       }
     },
-    "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj": {
+    "D:\\VS\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj",
+        "projectUniqueName": "D:\\VS\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj",
         "projectName": "Projet4A_Application",
-        "projectPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj",
+        "projectPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj",
         "packagesPath": "C:\\Users\\Mikrail\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\obj\\",
+        "outputPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -203,11 +203,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Communication\\Communication.csproj": {
-                "projectPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Communication\\Communication.csproj"
+              "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj": {
+                "projectPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj"
               },
-              "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Modeles\\Modeles.csproj": {
-                "projectPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Modeles\\Modeles.csproj"
+              "D:\\VS\\P4A_Application\\Projet4A_Application\\Modeles\\Modeles.csproj": {
+                "projectPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Modeles\\Modeles.csproj"
               }
             }
           }

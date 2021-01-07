@@ -186,11 +186,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Communication\\Communication.csproj",
+      "projectUniqueName": "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj",
       "projectName": "Communication",
-      "projectPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Communication\\Communication.csproj",
+      "projectPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj",
       "packagesPath": "C:\\Users\\Mikrail\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Communication\\obj\\",
+      "outputPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

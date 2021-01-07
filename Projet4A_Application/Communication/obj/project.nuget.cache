@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XbFjAN7QL7nY+nDHOSirJ/XpwsSzThOMMHhNwM9Iiorys9t9kFiyiws1lpUCFmHf5euW/0Z1x2+FeDxBw2cMsQ==",
+  "dgSpecHash": "+wroYYOq7olsNdFDveNQ7hbtQeBKKbRNobUfTg2SdQ0XrIMmLgfe8+574anFKWdsPw9nkj8JTE5NLKh56/Xhkw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Communication\\Communication.csproj",
+  "projectFilePath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mikrail\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Mikrail\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

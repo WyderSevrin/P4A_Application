@@ -16,7 +16,6 @@ namespace Projet4A_Application
         {
             InitializeComponent();
             setTheme();
-            setStack();
         }
 
         protected override void OnAppearing()
@@ -24,7 +23,6 @@ namespace Projet4A_Application
             //Write the code of your page here
             setTheme();
             setStack();
-
             base.OnAppearing();
         }
 
@@ -41,6 +39,11 @@ namespace Projet4A_Application
         private async void HtmlTestClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new EpubReader());
+        }
+
+        private void SearchButton_Clicked(object sender, EventArgs e)
+        {
+            setStack();
         }
 
         private void setTheme()
@@ -77,14 +80,14 @@ namespace Projet4A_Application
 
                 var TitreLivre = new Label
                 {
-                    Text = "Nom du livre",
+                    Text = "Nom du livre", //Recuperer le nom du livre dans une bdd
                     Margin = new Thickness(10, 0, 10, 0),
                     FontSize = Device.GetNamedSize(NamedSize.Body, typeof(Label))
                 };
 
                 var NomAuteur = new Label
                 {
-                    Text = "Nom de l'auteur",
+                    Text = "Nom de l'auteur",  //Recuperer le nom de l'auteur dans une bdd
                     Margin = new Thickness(10, 0, 10, 0),
                     FontSize = Device.GetNamedSize(NamedSize.Body, typeof(Label))
                 };

@@ -39,7 +39,7 @@ namespace Projet4A_Application
                 FavButton.BackgroundColor = Color.LightGray;
                 ReadButton.TextColor = Color.Black;
                 ReadButton.BackgroundColor = Color.LightGray;
-                NoteItem.TextColor = Color.Black;
+                NoteItem.TitleColor = Color.Black;
                 DescriptionLabel.TextColor = Color.Black;
                 CommentaryLabel.TextColor = Color.Black;
                 RightPanelLayout.BackgroundColor = Color.AntiqueWhite;
@@ -51,7 +51,7 @@ namespace Projet4A_Application
                 FavButton.BackgroundColor = Color.DarkSeaGreen;
                 ReadButton.TextColor = Color.GhostWhite;
                 ReadButton.BackgroundColor = Color.DarkSeaGreen;
-                NoteItem.TextColor = Color.GhostWhite;
+                NoteItem.TitleColor = Color.GhostWhite;
                 DescriptionLabel.TextColor = Color.GhostWhite;
                 CommentaryLabel.TextColor = Color.GhostWhite;
                 RightPanelLayout.BackgroundColor = Color.DarkSlateBlue;
@@ -63,5 +63,15 @@ namespace Projet4A_Application
         {
             await Navigation.PushAsync(new Lecture_Livre());
         }
+
+        public void setItem()
+        {
+            String bookTitle = "Title"; //On recuperera le titre depuis la bdd  
+            this.TitreLivre.Text = bookTitle;
+
+            String bookDescription = "Title"; //On recuperera le titre depuis la bdd  
+            this.DescriptionLabel.Text = bookDescription;
+        }
+
     }
 }

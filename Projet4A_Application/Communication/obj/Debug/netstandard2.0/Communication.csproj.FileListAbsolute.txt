@@ -15,3 +15,12 @@ C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application
 C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.csproj.CoreCompileInputs.cache
 C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.dll
 C:\Users\Mikrail\Documents\Projet 4A\Github\P4A_Application\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.pdb
+D:\VS\P4A_Application\Projet4A_Application\Communication\bin\Debug\netstandard2.0\Communication.deps.json
+D:\VS\P4A_Application\Projet4A_Application\Communication\bin\Debug\netstandard2.0\Communication.dll
+D:\VS\P4A_Application\Projet4A_Application\Communication\bin\Debug\netstandard2.0\Communication.pdb
+D:\VS\P4A_Application\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.csprojAssemblyReference.cache
+D:\VS\P4A_Application\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.AssemblyInfoInputs.cache
+D:\VS\P4A_Application\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.AssemblyInfo.cs
+D:\VS\P4A_Application\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.csproj.CoreCompileInputs.cache
+D:\VS\P4A_Application\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.dll
+D:\VS\P4A_Application\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.pdb

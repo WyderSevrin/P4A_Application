@@ -15,6 +15,8 @@ namespace Projet4A_Application
         public Lecture_Livre()
         {
             InitializeComponent();
+            String bookTitle = "Title";  //Variable qui recuperera le nom du livre dans la bdd
+            this.Title.Text = bookTitle;
             this.yep.Uri = "Livres/test.pdf";
         }
 

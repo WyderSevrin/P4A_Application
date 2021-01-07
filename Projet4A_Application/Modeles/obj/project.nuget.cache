@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aGsakvLMX3aBDDSUwFc0F6m2DWVms63Y0Frp9L4X9fBUjw0zqMQ0LRQaAmbMbWtoUT5HknWJj0Y3sPr0ycEIlw==",
+  "dgSpecHash": "dAo1hNp0P590bPlhkcERN8wWlm3DrFy+Rx0feE46ZJfBEOm8gYIvCiwDuiUXJ53XU3u0/0jyZklVmPUKngdZvg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mikrail\\Documents\\Projet4A_Application\\Modeles\\Modeles.csproj",
+  "projectFilePath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Modeles\\Modeles.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mikrail\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Mikrail\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

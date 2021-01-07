@@ -4,7 +4,7 @@
              x:Class="Projet4A_Application.Lecture_Livre">
     <ContentPage.Content>
         <FlexLayout Direction="Column" BackgroundColor="DarkGreen">
-            <Label Text="Nom du livre" FontSize="Title" FontAttributes="Bold" TextColor="AntiqueWhite" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FlexLayout.Grow="0.1" />
+            <Label x:Name="Title" Text="Nom du livre" FontSize="Title" FontAttributes="Bold" TextColor="AntiqueWhite" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FlexLayout.Grow="0.1" />
             <local:CustomWebView x:Name="yep" Uri="Livres/test.pdf" FlexLayout.Grow="1" />
         </FlexLayout>
     </ContentPage.Content>
