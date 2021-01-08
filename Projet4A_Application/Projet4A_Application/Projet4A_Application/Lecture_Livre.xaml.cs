@@ -17,7 +17,9 @@ namespace Projet4A_Application
             InitializeComponent();
             String bookTitle = "Title";  //Variable qui recuperera le nom du livre dans la bdd
             this.Title.Text = bookTitle;
-            this.yep.Uri = "Livres/test.pdf";
+
+            String bookToReadPath = "Livres/test.pdf";  //Chemin que l'on donne lorsque l'on dl le livre dans le dossier ou sous dossier de Asset
+            this.bookToRead.Uri = bookToReadPath;
         }
 
         private void OnPreviousClick(object sender, EventArgs e)

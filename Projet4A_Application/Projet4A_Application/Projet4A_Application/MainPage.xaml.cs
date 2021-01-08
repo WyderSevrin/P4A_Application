@@ -9,13 +9,14 @@ namespace Projet4A_Application
         public MainPage()
         {
             InitializeComponent();
+            setItem();
         }
 
         protected override void OnAppearing()
         {
             //Write the code of your page here
             setTheme();
-
+            setItem();
             base.OnAppearing();
         }
 
@@ -64,5 +65,13 @@ namespace Projet4A_Application
                 SettingsButton.TextColor = Color.GhostWhite;
             }
         }
+
+        public void setItem()
+        {
+
+            
+
+        }
+
     }
 }

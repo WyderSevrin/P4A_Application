@@ -4,14 +4,14 @@
              x:Class="Projet4A_Application.Profile_Livre">
     <ContentPage.Content>
         <FlexLayout x:Name="GlobalFlexLayout" Direction="Column" BackgroundColor="DarkSlateGray">
-            <Label x:Name="TitreLivre" Text="Nom du livre" TextColor="GhostWhite" BackgroundColor="DarkGreen" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FlexLayout.Grow="0.1" />
-            <FlexLayout Direction="Row" FlexLayout.Grow="0.4">
+            <Label x:Name="TitreLivre" TextColor="GhostWhite" BackgroundColor="DarkGreen" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FlexLayout.Grow="0.1" />
+            <FlexLayout Direction="Row" FlexLayout.Grow="0.5">
                 <BoxView x:Name="BookImage" BackgroundColor="GhostWhite" FlexLayout.Grow="0.4"/>
                 <StackLayout x:Name="RightPanelLayout" Orientation="Vertical" BackgroundColor="AntiqueWhite" FlexLayout.Grow="0.6">
-                    <StackLayout Orientation="Horizontal">
+                    <StackLayout x:Name="InteractUI" Orientation="Horizontal">
                         <Button x:Name="ReadButton" Text="Read" Clicked="ReadButton_Clicked" HorizontalOptions="Center"/>
                         <Button x:Name="FavButton" Text="Favoris" Clicked="OnFavClick" HorizontalOptions="Center"/>
-                        <Picker x:Name="NoteItem" Title="Note" FontSize="Large" FontAttributes="Bold" TextColor="Black">
+                        <Picker x:Name="NoteItem" FontSize="Large" FontAttributes="Bold" TextColor="Black">
                             <Picker.Items>
                                 <x:String>1</x:String>
                                 <x:String>2</x:String>
@@ -21,12 +21,18 @@
                             </Picker.Items>
                         </Picker>
                     </StackLayout>
-                    <Label x:Name="DescriptionLabel" Text="aaaaaaaaaaaaaaaa" TextColor="Black" FontSize="Large"/>
+                    <Label x:Name="DescriptionLabel" TextColor="Black" FontSize="Large"/>
                 </StackLayout>
             </FlexLayout>
-            <FlexLayout x:Name="CommentaryPanelLayout" FlexLayout.Grow="0.4" BackgroundColor="AntiqueWhite">
-                <Label x:Name="CommentaryLabel" Text="Commentaire" TextColor="Black" FontSize="Title"/>
-            </FlexLayout>
+            <StackLayout x:Name="CommentaryPanelLayout" Orientation="Vertical" FlexLayout.Grow="0.4">
+                <Label x:Name="CommentaryLabel" Text="Commentaire" TextColor="Black" FontSize="Title" FlexLayout.Grow="0.1"/>
+                <ScrollView x:Name="ScrollingCommentary">
+                    <StackLayout x:Name="CommentaryDisplayer" Orientation="Vertical">
+
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+            
         </FlexLayout>
     </ContentPage.Content>
 </ContentPage>

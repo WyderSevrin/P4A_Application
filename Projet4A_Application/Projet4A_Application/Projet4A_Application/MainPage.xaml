@@ -6,15 +6,15 @@
              >
 
     <FlexLayout Direction="Column" AlignContent="Center" JustifyContent="SpaceEvenly">
-        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="ForestGreen" FlexLayout.AlignSelf="Center" >
-            <Label Text="E-Biblio" FontSize="Title" FontAttributes="Bold" HorizontalOptions="Center" Padding="0,10,0,5"/>
+        <StackLayout x:Name="EBiblioLayout" VerticalOptions="Center" HorizontalOptions="Center" BackgroundColor="ForestGreen" FlexLayout.AlignSelf="Center">
+            <Label x:Name="AppliName" Text="E-Biblio" FontSize="Title" FontAttributes="Bold" HorizontalOptions="Center" Padding="0,10,0,5"/>
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
                 <Entry x:Name="CodeEntry" Placeholder="Code Utilisateur" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="LightGray" Margin="10,10,10,5" ClearButtonVisibility="Never"/>
                 <Button x:Name="NextButton" Text="Next" HorizontalOptions="Center" Clicked="OnClickUser" Margin="10,10,10,5"/>
             </StackLayout>
             <Button x:Name="InviteeButton" Text="Continuer en tant qu'invité" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" BackgroundColor="LightGray" Clicked="OnClickUserless" Margin="10,5,10,20" />
         </StackLayout>
-        <Button x:Name="SettingsButton" Text="Settings" FlexLayout.AlignSelf="Center" FontAttributes="Bold" Clicked="OnSettingsClick" />
+        <Button x:Name="SettingsButton" Text="Settings" FlexLayout.AlignSelf="Center" FontAttributes="Bold" Clicked="OnSettingsClick"/>
     </FlexLayout>
 
 </ContentPage>

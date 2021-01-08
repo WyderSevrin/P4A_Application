@@ -20,13 +20,13 @@ namespace Projet4A_Application {
         private global::Xamarin.Forms.Label Title;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Projet4A_Application.CustomWebView yep;
+        private global::Projet4A_Application.CustomWebView bookToRead;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Lecture_Livre));
             Title = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "Title");
-            yep = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Projet4A_Application.CustomWebView>(this, "yep");
+            bookToRead = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Projet4A_Application.CustomWebView>(this, "bookToRead");
         }
     }
 }

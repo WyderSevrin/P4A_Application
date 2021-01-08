@@ -63,7 +63,7 @@ namespace Projet4A_Application
             StackTest.Children.Clear();
 
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 100; i++)
             {
                 var flexLaytest = new FlexLayout()
                 {
@@ -76,20 +76,23 @@ namespace Projet4A_Application
                     Text = "Acceder",
                     Margin = new Thickness(10, 0, 10, 0),
                     FontSize = Device.GetNamedSize(NamedSize.Body, typeof(Label)),
+                    WidthRequest = this.Width/3
                 };
 
                 var TitreLivre = new Label
                 {
                     Text = "Nom du livre", //Recuperer le nom du livre dans une bdd
                     Margin = new Thickness(10, 0, 10, 0),
-                    FontSize = Device.GetNamedSize(NamedSize.Body, typeof(Label))
+                    FontSize = Device.GetNamedSize(NamedSize.Body, typeof(Label)),
+                    WidthRequest = this.Width / 3
                 };
 
                 var NomAuteur = new Label
                 {
                     Text = "Nom de l'auteur",  //Recuperer le nom de l'auteur dans une bdd
                     Margin = new Thickness(10, 0, 10, 0),
-                    FontSize = Device.GetNamedSize(NamedSize.Body, typeof(Label))
+                    FontSize = Device.GetNamedSize(NamedSize.Body, typeof(Label)),
+                    WidthRequest = this.Width / 3
                 };
 
                 if (UserSettings.DarkTheme == false)
