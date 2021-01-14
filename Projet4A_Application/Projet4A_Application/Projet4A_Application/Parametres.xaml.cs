@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Control;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,10 +13,13 @@ namespace Projet4A_Application
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Parametres : ContentPage
     {
-        public Parametres()
+        private Controleur control;
+
+        public Parametres(Controleur control)
         {
             InitializeComponent();
             setTheme();
+            this.control = control;
         }
 
         private void OnClairClick(object sender, EventArgs e)

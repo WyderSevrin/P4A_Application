@@ -3,7 +3,15 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "Projet4A_Application.Android.dll" comes first in this list. */
 		"Projet4A_Application.Android.dll",
+		"CoreFtp.dll",
 		"FormsViewGroup.dll",
+		"Microsoft.Extensions.Caching.Abstractions.dll",
+		"Microsoft.Extensions.Caching.Memory.dll",
+		"Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+		"Microsoft.Extensions.Logging.Abstractions.dll",
+		"Microsoft.Extensions.Options.dll",
+		"Microsoft.Extensions.Primitives.dll",
+		"MySqlConnector.dll",
 		"Projet4A_Application.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",
@@ -47,6 +55,8 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
+		"Control.dll",
+		"Communication.dll",
 		"Modeles.dll",
 	};
 	public static String[] Dependencies = new String[]{

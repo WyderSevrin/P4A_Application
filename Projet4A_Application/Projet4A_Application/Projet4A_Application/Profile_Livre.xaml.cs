@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Control;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,11 @@ namespace Projet4A_Application
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Profile_Livre : ContentPage
     {
-        public Profile_Livre()
+        private Controleur control;
+        public Profile_Livre(Controleur control)
         {
             InitializeComponent();
+            this.control = control;
             setTheme();
             setItem();
             setCommentaryStack();

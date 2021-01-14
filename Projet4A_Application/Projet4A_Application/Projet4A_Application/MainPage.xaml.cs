@@ -1,4 +1,5 @@
-﻿using Modeles;
+﻿using Control;
+using Modeles;
 using System;
 using Xamarin.Forms;
 
@@ -6,9 +7,12 @@ namespace Projet4A_Application
 {
     public partial class MainPage : ContentPage
     {
-        public MainPage()
+        private Controleur control;
+
+        public MainPage(Controleur control)
         {
             InitializeComponent();
+            this.control = control;
             setItem();
         }
 
@@ -22,20 +26,20 @@ namespace Projet4A_Application
 
         private async void OnClickUser(object sender, EventArgs e)
         {
-            var user = new Utilisateur { };
-            var bibliotheque = new Bibliotheque();
+            var user = new Utilisateur();
+            var bibliotheque = new Bibliotheque(control);
             bibliotheque.BindingContext = user;
             await Navigation.PushAsync(bibliotheque);
         }
 
         private async void OnClickUserless(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Bibliotheque());
+            await Navigation.PushAsync(new Bibliotheque(control));
         }
 
         private async void OnSettingsClick(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Parametres());
+            await Navigation.PushAsync(new Parametres(control));
         }
 
         private void setTheme()

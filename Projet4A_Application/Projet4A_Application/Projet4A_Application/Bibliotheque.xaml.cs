@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Control;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,12 @@ namespace Projet4A_Application
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Bibliotheque : ContentPage
     {
-        public Bibliotheque()
+        private Controleur control;
+
+        public Bibliotheque(Controleur control)
         {
             InitializeComponent();
+            this.control = control;
             setTheme();
         }
 
@@ -28,12 +32,12 @@ namespace Projet4A_Application
 
         private async void OnSettingsClick(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Parametres());
+            await Navigation.PushAsync(new Parametres(control));
         }
 
         private async void GoReadPage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Profile_Livre());
+            await Navigation.PushAsync(new Profile_Livre(control));
         }
 
         private async void HtmlTestClicked(object sender, EventArgs e)
@@ -61,6 +65,7 @@ namespace Projet4A_Application
         private void setStack()
         {
             StackTest.Children.Clear();
+
 
 
             for (int i = 0; i < 100; i++)
