@@ -1,4 +1,5 @@
 ﻿using Control;
+using Modeles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,7 +27,7 @@ namespace Projet4A_Application
         {
             //Write the code of your page here
             setTheme();
-            setStack();
+            setStack(control.Bibliotheque);
             base.OnAppearing();
         }
 
@@ -47,7 +48,13 @@ namespace Projet4A_Application
 
         private void SearchButton_Clicked(object sender, EventArgs e)
         {
-            setStack();
+            if (NameEntry.Text == null || NameEntry.Text == "") {
+                setStack(control.Bibliotheque);
+            }
+            else
+            {
+                setStack(control.searchLivreByNom(NameEntry.Text.ToString()));
+            }
         }
 
         private void setTheme()
@@ -62,13 +69,13 @@ namespace Projet4A_Application
             }
         }
 
-        private void setStack()
+        private void setStack(List<Livre> livre)
         {
             StackTest.Children.Clear();
 
 
 
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < livre.Count; i++)
             {
                 var flexLaytest = new FlexLayout()
                 {
@@ -86,7 +93,7 @@ namespace Projet4A_Application
 
                 var TitreLivre = new Label
                 {
-                    Text = "Nom du livre", //Recuperer le nom du livre dans une bdd
+                    Text = livre[i].titre, //Recuperer le nom du livre dans une bdd
                     Margin = new Thickness(10, 0, 10, 0),
                     FontSize = Device.GetNamedSize(NamedSize.Body, typeof(Label)),
                     WidthRequest = this.Width / 3
@@ -94,7 +101,7 @@ namespace Projet4A_Application
 
                 var NomAuteur = new Label
                 {
-                    Text = "Nom de l'auteur",  //Recuperer le nom de l'auteur dans une bdd
+                    Text = "Auteur",  //Recuperer le nom de l'auteur dans une bdd
                     Margin = new Thickness(10, 0, 10, 0),
                     FontSize = Device.GetNamedSize(NamedSize.Body, typeof(Label)),
                     WidthRequest = this.Width / 3
@@ -124,6 +131,26 @@ namespace Projet4A_Application
                 StackTest.Children.Add(flexLaytest);
 
             }
+        }
+
+        private void GenreChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            List<Livre> listLivre = control.searchLivreByGenre(Genre_Picker.SelectedItem.ToString());
+        }
+
+        private void MouvementChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            List<Livre> listLivre = control.searchLivreByGenre(Mouvement_Picker.SelectedItem.ToString());
+        }
+
+        private void FavCheckBoxChanged(object sender, CheckedChangedEventArgs e)
+        {
+
+        }
+
+        private void OrdreChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+
         }
     }
 }

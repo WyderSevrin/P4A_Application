@@ -9,7 +9,7 @@
                 <Button Text="Settings" FlexLayout.AlignSelf="End" Clicked="OnSettingsClick" Margin="10,10,10,0" />
             </FlexLayout>
             <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceEvenly">
-                <Picker x:Name="Genre_Picker" Title="GENRE" TitleColor="AntiqueWhite" FontSize="Large" FontAttributes="Bold" >
+                <Picker x:Name="Genre_Picker" Title="GENRE" TitleColor="AntiqueWhite" FontSize="Large" FontAttributes="Bold" PropertyChanged="GenreChanged" >
                     <Picker.Items>
                         <x:String>ROMAN</x:String>
                         <x:String>POEME</x:String>
@@ -17,19 +17,19 @@
                         <x:String>PIECE DE THEATRE</x:String>
                     </Picker.Items>
                 </Picker>
-                <Picker x:Name="Mouvement_Picker" Title="MOUVEMENT" TitleColor="AntiqueWhite" FontSize="Large" FontAttributes="Bold" >
+                <Picker x:Name="Mouvement_Picker" PropertyChanged="MouvementChanged" Title="MOUVEMENT" TitleColor="AntiqueWhite" FontSize="Large" FontAttributes="Bold" >
                     <Picker.Items>
                         <x:String>ROMANTISME</x:String>
                         <x:String>NATURALISME</x:String>
                     </Picker.Items>
                 </Picker>
                 <StackLayout Orientation="Horizontal">
-                    <CheckBox VerticalOptions="Center" Color="Aqua" />
+                    <CheckBox x:Name="FavCheckBox" CheckedChanged="FavCheckBoxChanged" VerticalOptions="Center" Color="Aqua" />
                     <Label Text="Favoris" FontSize="Large" FontAttributes="Bold" VerticalOptions="Center" TextColor="AntiqueWhite" />
                 </StackLayout>
             </FlexLayout>
             <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceEvenly">
-                <Picker x:Name="Ordre_Picker" Title="ORDRE" TitleColor="AntiqueWhite" FontSize="Large" FontAttributes="Bold" >
+                <Picker x:Name="Ordre_Picker" PropertyChanged="OrdreChanged" Title="ORDRE" TitleColor="AntiqueWhite" FontSize="Large" FontAttributes="Bold" >
                     <Picker.Items>
                         <x:String>A --> Z</x:String>
                         <x:String>Z --> A</x:String>
@@ -39,7 +39,7 @@
                 </Picker>
             </FlexLayout>
             <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceEvenly">
-                <Entry Placeholder="Chercher Titre ou Auteur" PlaceholderColor="AntiqueWhite" FontSize="Large" FontAttributes="Bold"/>
+                <Entry x:Name="NameEntry" Placeholder="Chercher Titre ou Auteur" PlaceholderColor="AntiqueWhite" FontSize="Large" FontAttributes="Bold"/>
                 <Button x:Name="SearchButton" Clicked="SearchButton_Clicked" Text="SEARCH"/>
             </FlexLayout>
             <ScrollView x:Name="ScrollingItem" BackgroundColor="AntiqueWhite">
