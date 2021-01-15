@@ -26,6 +26,10 @@
             </FlexLayout>
             <StackLayout x:Name="CommentaryPanelLayout" Orientation="Vertical" FlexLayout.Grow="0.4">
                 <Label x:Name="CommentaryLabel" Text="Commentaire" TextColor="Black" FontSize="Title" FlexLayout.Grow="0.1"/>
+                <StackLayout FlowDirection="MatchParent" HorizontalOptions="StartAndExpand" Orientation="Horizontal" Padding="10,5">
+                    <Entry x:Name="CommentaryEntry" Placeholder="Entrer votre Commentaire" IsSpellCheckEnabled="True" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"/>
+                    <Button x:Name="CommentarySend" Clicked="SendCommentaire" Text="Envoyer" Padding="5" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
                 <ScrollView x:Name="ScrollingCommentary">
                     <StackLayout x:Name="CommentaryDisplayer" Orientation="Vertical">
 

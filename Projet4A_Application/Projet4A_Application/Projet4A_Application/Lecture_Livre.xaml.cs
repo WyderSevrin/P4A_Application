@@ -17,10 +17,10 @@ namespace Projet4A_Application
         public Lecture_Livre()
         {
             InitializeComponent();
-            String bookTitle = "Title";  //Variable qui recuperera le nom du livre dans la bdd
+            String bookTitle = this.control.SelectedBook.titre;  //Variable qui recuperera le nom du livre dans la bdd
             this.Title.Text = bookTitle;
 
-            String bookToReadPath = "Livres/test.pdf";  //Chemin que l'on donne lorsque l'on dl le livre dans le dossier ou sous dossier de Asset
+            String bookToReadPath = "Livres/" + bookTitle + ".pdf";  //Chemin que l'on donne lorsque l'on dl le livre dans le dossier ou sous dossier de Asset
             this.bookToRead.Uri = bookToReadPath;
         }
 

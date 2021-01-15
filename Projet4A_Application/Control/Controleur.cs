@@ -16,6 +16,8 @@ namespace Control
         public List<Livre> Bibliotheque { get; set; }
         public List<Commentaire> Commentaires { get; set; }
         private Utilisateur utilisateur { get; set; }
+        public Livre SelectedBook { get; set; }
+        public List<Livre> CurrentBookStack { get; set; }
 
         public Controleur()
         {

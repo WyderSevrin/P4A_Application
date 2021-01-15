@@ -52,6 +52,10 @@ namespace Projet4A_Application
                 CommentaryPanelLayout.BackgroundColor = Color.LightSteelBlue;
                 CommentaryLabel.TextColor = Color.Black;
                 ScrollingCommentary.BackgroundColor = Color.LightSteelBlue;
+                CommentarySend.TextColor = Color.Black;
+                CommentarySend.BackgroundColor = Color.LightGray;
+                CommentaryEntry.TextColor = Color.Black;
+                CommentaryEntry.PlaceholderColor = Color.Black;
             }
             else
             {
@@ -65,20 +69,25 @@ namespace Projet4A_Application
                 CommentaryPanelLayout.BackgroundColor = Color.DarkBlue;
                 CommentaryLabel.TextColor = Color.GhostWhite;
                 ScrollingCommentary.BackgroundColor = Color.DarkBlue;
+                CommentarySend.TextColor = Color.GhostWhite;
+                CommentarySend.BackgroundColor = Color.DarkSeaGreen;
+                CommentaryEntry.TextColor = Color.GhostWhite;
+                CommentaryEntry.PlaceholderColor = Color.GhostWhite;
             }
         }
 
         private async void ReadButton_Clicked(object sender, EventArgs e)
         {
+            this.control.downLoadLivre(this.control.SelectedBook.id);
             await Navigation.PushAsync(new Lecture_Livre());
         }
 
         public void setItem()
         {
-            String bookTitle = "Title"; //On recuperera le titre depuis la bdd  
+            String bookTitle = this.control.SelectedBook.titre; //On recuperera le titre depuis la bdd  
             this.TitreLivre.Text = bookTitle;
 
-            String bookDescription = "Resume du bouquin"; //On recuperera le titre depuis la bdd  
+            String bookDescription = this.control.SelectedBook.resumer; //On recuperera le titre depuis la bdd  
             this.DescriptionLabel.Text = bookDescription;
 
             String NoteTitle = "Note"; //On recupere la note moyenne depuis la bdd
@@ -96,20 +105,20 @@ namespace Projet4A_Application
             this.CommentaryDisplayer.Children.Clear();
 
 
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < this.control.Commentaires.Count; i++)
             {
 
 
                 var UserPseudo = new Label()
                 {
-                    Text = "XX_Pseudo_XX", //Recuperer le pseudo de la personne qui commente dans la bdd
+                    Text = this.control.Commentaires[i].titre, //Recuperer le pseudo de la personne qui commente dans la bdd
                     Margin = new Thickness(0, 0, 0, 0),
                     FontSize = Device.GetNamedSize(NamedSize.Body, typeof(Label))
                 };
 
                 var Commentary = new Label
                 {
-                    Text = "Ce livre c'est de la merde. Et puis bon qu'est-ce qu'un livre. Un rammasis d'encre sur un ramassis de papier. Enfin plus maintenant", //Recuperer le nom du livre dans une bdd
+                    Text = this.control.Commentaires[i].contenu, //Recuperer le nom du livre dans une bdd
                     Margin = new Thickness(0, 0, 0, 0),
                     FontSize = Device.GetNamedSize(NamedSize.Body, typeof(Label))
                 };
@@ -133,5 +142,14 @@ namespace Projet4A_Application
             }
         }
 
+        private void SendCommentaire(object sender, EventArgs e)
+        {
+            if (this.CommentaryEntry.Text == "" || this.CommentaryEntry.Text == "")
+            {
+                String CommentaireToSend = this.CommentaryEntry.Text;
+                //Fonction pour envoyer un commentaire
+                this.CommentaryEntry.Text = "";
+            }
+        }
     }
 }

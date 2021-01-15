@@ -20,6 +20,7 @@ namespace Projet4A_Application
         {
             InitializeComponent();
             this.control = control;
+            this.control.CurrentBookStack = this.control.Bibliotheque;
             setTheme();
         }
 
@@ -28,6 +29,7 @@ namespace Projet4A_Application
             //Write the code of your page here
             setTheme();
             setStack(control.Bibliotheque);
+            this.control.CurrentBookStack = this.control.Bibliotheque;
             base.OnAppearing();
         }
 
@@ -38,6 +40,14 @@ namespace Projet4A_Application
 
         private async void GoReadPage(object sender, EventArgs e)
         {
+            var selectedBookTitle = ((Button)sender).ClassId;
+            for (int i = 0; i<this.control.CurrentBookStack.Count; i++)
+            {
+                if (this.control.CurrentBookStack[i].titre == selectedBookTitle)
+                {
+                    this.control.SelectedBook = this.control.CurrentBookStack[i];
+                }
+            }
             await Navigation.PushAsync(new Profile_Livre(control));
         }
 
@@ -50,10 +60,12 @@ namespace Projet4A_Application
         {
             if (NameEntry.Text == null || NameEntry.Text == "") {
                 setStack(control.Bibliotheque);
+                this.control.CurrentBookStack = this.control.Bibliotheque;
             }
             else
             {
                 setStack(control.searchLivreByNom(NameEntry.Text.ToString()));
+                this.control.CurrentBookStack = control.searchLivreByNom(NameEntry.Text.ToString());
             }
         }
 
@@ -88,7 +100,8 @@ namespace Projet4A_Application
                     Text = "Acceder",
                     Margin = new Thickness(10, 0, 10, 0),
                     FontSize = Device.GetNamedSize(NamedSize.Body, typeof(Label)),
-                    WidthRequest = this.Width/3
+                    WidthRequest = this.Width / 3,
+                    ClassId = livre[i].titre
                 };
 
                 var TitreLivre = new Label
@@ -136,11 +149,15 @@ namespace Projet4A_Application
         private void GenreChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
             List<Livre> listLivre = control.searchLivreByGenre(Genre_Picker.SelectedItem.ToString());
+            setStack(listLivre);
+            this.control.CurrentBookStack = listLivre;
         }
 
         private void MouvementChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
             List<Livre> listLivre = control.searchLivreByGenre(Mouvement_Picker.SelectedItem.ToString());
+            setStack(listLivre);
+            this.control.CurrentBookStack = listLivre;
         }
 
         private void FavCheckBoxChanged(object sender, CheckedChangedEventArgs e)
