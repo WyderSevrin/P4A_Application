@@ -13,13 +13,26 @@ namespace Control
         private FTP ftpManager;
         private Fabrique fabrique;
         //private SQL_constante;
-        public List<Livre> Bibliotheque { get; set; }
-        public List<Commentaire> Commentaires { get; set; }
-        private Utilisateur utilisateur { get; set; }
+        private List<Livre> bibliotheque;
+        public List<Commentaire> commentaires;
+
+        //private Utilisateur utilisateur { get; set; }
 
         public Controleur()
         {
+            init();
             updateListLivre();
+            
+        }
+
+        private void init()
+        {
+            this.ftpManager = new FTP();
+            this.sqlManager = new SQL();
+            this.fabrique = new Fabrique();
+
+            this.bibliotheque = new List<Livre>();
+            this.commentaires = new List<Commentaire>();
         }
 
         /// <summary>
@@ -27,8 +40,16 @@ namespace Control
         /// </summary>
         public void updateListLivre()
         {
+            
             List<List<string>> liste = sqlManager.SqlRequest(SQL_constants.selectAllBooks);
-            Bibliotheque = fabrique.CreateLivres(liste);
+           
+            this.bibliotheque = fabrique.CreateLivres(liste);
+            
+            Console.WriteLine("\n \n ===============    Test  Controleur  ================");
+            foreach (Livre l in this.bibliotheque)
+            {
+                Console.WriteLine("Livre n° " + l.id + " Nom : " + l.titre);
+            }
         }
 
         /// <summary>
@@ -37,7 +58,16 @@ namespace Control
         public void updateListCommentaire()
         {
             List<List<string>> liste = sqlManager.SqlRequest(SQL_constants.selectAllComments);
-            Commentaires = fabrique.CreateCommentaires(liste);
+            Console.WriteLine(" \n n /// Liste des commentaire --> " + liste.Count);
+            this.commentaires = fabrique.CreateCommentaires(liste);
+        }
+
+        public void updateListCommentaireById(String id)
+        {
+            List<List<string>> liste = sqlManager.SqlRequest(SQL_constants.selectCommentaireByIdLivre + id);
+
+            Console.WriteLine(" \n n /// Liste des commentaire --> " + liste.Count);
+            this.commentaires = fabrique.CreateCommentaires(liste);
         }
 
         /// <summary>
@@ -48,7 +78,7 @@ namespace Control
         public List<Commentaire> getCommentaireOfBook(int idBook)
         {
             List<Commentaire> output = new List<Commentaire>();
-            foreach (Commentaire c in this.Commentaires)
+            foreach (Commentaire c in this.commentaires)
             {
                 if (c.idLivre== idBook)
                 {
@@ -66,7 +96,7 @@ namespace Control
         public List<Livre> searchLivreByNom(string nom)
         {
             List<Livre> result = new List<Livre>();
-            foreach (Livre l in this.Bibliotheque)
+            foreach (Livre l in this.bibliotheque)
             {
                 if (l.titre == nom)
                 {
@@ -81,7 +111,7 @@ namespace Control
         public List<Livre> searchLivreByGenre(string genre)
         {
             List<Livre> result = new List<Livre>();
-            foreach (Livre l in this.Bibliotheque)
+            foreach (Livre l in this.bibliotheque)
             {
                 if (l.genre == genre)
                 {
@@ -96,7 +126,7 @@ namespace Control
         public List<Livre> searchLivreByMouvement(string mouv)
         {
             List<Livre> result = new List<Livre>();
-            foreach (Livre l in this.Bibliotheque)
+            foreach (Livre l in this.bibliotheque)
             {
                 if (l.mouvement == mouv)
                 {
@@ -113,6 +143,30 @@ namespace Control
         //Par favoris
 
 
+        public string getAuteurCommentaire(string id)
+        {
+            String outpute = "";
+
+            //Console.WriteLine("\n \n ============= On TESTTTTT ====================================================\n \n ");
+
+            List<List<String>> l = this.sqlManager.SqlRequest(SQL_constants.selectuserById + id);
+
+           // Console.WriteLine("\n \n ============= On TESTTTTT ====================================================\n \n ");
+            outpute += l[0][0];
+
+            //Console.WriteLine("\n \n //// ======\n size = "+ l.Count +"  \n====== //// ==> Voici le retour de l'auteur du commentaire  ==>"+ outpute+"<===");
+            return outpute;
+        }
+
+        public List<Livre> getBibliotheque()
+        {
+            return this.bibliotheque;
+        }
+
+        public List<Commentaire> getListCommentaires()
+        {
+            return this.commentaires;
+        }
 
         /// <summary>
         /// on télécharge un livre par rapport à son id
@@ -121,15 +175,19 @@ namespace Control
         public async void downLoadLivre(int idLivre)
         {
             string nom = "";
-            foreach (Livre l in this.Bibliotheque)
+            foreach (Livre l in this.bibliotheque)
             {
                 if (l.id == idLivre)
                 {
                     nom = l.titre;
+                    Console.WriteLine("\n \n ====== Je dl le Livre !! =====");
+                    //ftpManager.download(nom+".pdf");
+                    ftpManager.dowload2(nom+".pdf");
                     break;
                 }
             }
-            await ftpManager.download_Async(nom);
+            //await ftpManager.download_Async(nom);
+            
         }
     }
 }

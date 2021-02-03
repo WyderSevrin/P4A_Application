@@ -46,6 +46,10 @@
               "target": "Package",
               "version": "[1.4.0, )"
             },
+            "FluentFTP": {
+              "target": "Package",
+              "version": "[33.0.3, )"
+            },
             "MySqlConnector": {
               "target": "Package",
               "version": "[1.2.1, )"
@@ -55,6 +59,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.6.1, )"
             }
           },
           "imports": [

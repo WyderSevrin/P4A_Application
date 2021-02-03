@@ -18,5 +18,16 @@ namespace Communication
         #region MYSQL SELECT ALL COMMENTS 
         public static string selectAllComments = "select * from Commentaire";
         #endregion
+
+        #region MYSQL SELECT USER NAME BY ID
+        public static string selectuserById = "SELECT Nom FROM utilisateur Where idUtilisateur =";
+        #endregion
+
+        
+        #region MYSQL SELECT COMMENTAIRE BY ID LIVRE
+        public static string selectCommentaireByIdLivre = "SELECT * FROM Commentaire Where Commentaire.Livre_idLivre =";
+        #endregion
+        
+
     }
 }

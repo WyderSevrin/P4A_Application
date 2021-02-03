@@ -1,4 +1,5 @@
 ﻿using Control;
+using Modeles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,13 +15,23 @@ namespace Projet4A_Application
     public partial class Profile_Livre : ContentPage
     {
         private Controleur control;
-        public Profile_Livre(Controleur control)
+        private Livre livreToRead;
+
+        private List<Commentaire> listCommentaire;
+
+        public Profile_Livre(Controleur control, Livre livreToread)
         {
             InitializeComponent();
             this.control = control;
+            this.livreToRead = livreToread;
+            this.control.updateListCommentaireById(this.livreToRead.id.ToString());
+            this.listCommentaire = this.control.commentaires;
+            
             setTheme();
             setItem();
             setCommentaryStack();
+
+            
         }
 
         protected override void OnAppearing()
@@ -28,7 +39,11 @@ namespace Projet4A_Application
             //Write the code of your page here
             setTheme();
             setItem();
-            setCommentaryStack();
+
+            this.control.updateListCommentaire();
+            this.listCommentaire = this.control.commentaires;
+
+            //setCommentaryStack();
 
             base.OnAppearing();
         }
@@ -70,18 +85,24 @@ namespace Projet4A_Application
 
         private async void ReadButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Lecture_Livre());
+            //Télécharger le livre
+            this.control.downLoadLivre(this.livreToRead.id);
+
+
+
+            //On passe à l'affichage
+            await Navigation.PushAsync(new Lecture_Livre(this.control,this.livreToRead));
         }
 
         public void setItem()
         {
-            String bookTitle = "Title"; //On recuperera le titre depuis la bdd  
+            String bookTitle = this.livreToRead.titre; //On recuperera le titre depuis la bdd  
             this.TitreLivre.Text = bookTitle;
 
-            String bookDescription = "Resume du bouquin"; //On recuperera le titre depuis la bdd  
+            String bookDescription = this.livreToRead.resumer; //On recuperera le titre depuis la bdd  
             this.DescriptionLabel.Text = bookDescription;
 
-            String NoteTitle = "Note"; //On recupere la note moyenne depuis la bdd
+            String NoteTitle = "5"; //On recupere la note moyenne depuis la bdd
             this.NoteItem.Title = NoteTitle;
 
             ScrollingCommentary.HeightRequest = CommentaryPanelLayout.Height - CommentaryPanelLayout.Height / 10;
@@ -94,22 +115,22 @@ namespace Projet4A_Application
         public void setCommentaryStack()
         {
             this.CommentaryDisplayer.Children.Clear();
+            
 
-
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < this.listCommentaire.Count(); i++)
             {
 
 
                 var UserPseudo = new Label()
                 {
-                    Text = "XX_Pseudo_XX", //Recuperer le pseudo de la personne qui commente dans la bdd
+                    Text = this.control.getAuteurCommentaire(this.listCommentaire[i].idUtilisateur.ToString()), //Recuperer le pseudo de la personne qui commente dans la bdd
                     Margin = new Thickness(0, 0, 0, 0),
                     FontSize = Device.GetNamedSize(NamedSize.Body, typeof(Label))
                 };
 
                 var Commentary = new Label
                 {
-                    Text = "Ce livre c'est de la merde. Et puis bon qu'est-ce qu'un livre. Un rammasis d'encre sur un ramassis de papier. Enfin plus maintenant", //Recuperer le nom du livre dans une bdd
+                    Text = this.listCommentaire[i].contenu, //Recuperer le nom du livre dans une bdd
                     Margin = new Thickness(0, 0, 0, 0),
                     FontSize = Device.GetNamedSize(NamedSize.Body, typeof(Label))
                 };
@@ -130,6 +151,15 @@ namespace Projet4A_Application
                 this.CommentaryDisplayer.Children.Add(UserPseudo);
                 this.CommentaryDisplayer.Children.Add(Commentary);
 
+            }
+        }
+        private void SendCommentaire(object sender, EventArgs e)
+        {
+            if (this.CommentaryEntry.Text == "" || this.CommentaryEntry.Text == "")
+            {
+                String CommentaireToSend = this.CommentaryEntry.Text;
+                //Fonction pour envoyer un commentaire
+                this.CommentaryEntry.Text = "";
             }
         }
 

@@ -46,6 +46,10 @@
               "target": "Package",
               "version": "[1.4.0, )"
             },
+            "FluentFTP": {
+              "target": "Package",
+              "version": "[33.0.3, )"
+            },
             "MySqlConnector": {
               "target": "Package",
               "version": "[1.2.1, )"
@@ -55,6 +59,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.6.1, )"
             }
           },
           "imports": [
@@ -116,11 +124,19 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "FluentFTP": {
+              "target": "Package",
+              "version": "[33.0.3, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.6.1, )"
             }
           },
           "imports": [
@@ -183,6 +199,10 @@
               "target": "Package",
               "version": "[1.4.0, )"
             },
+            "FluentFTP": {
+              "target": "Package",
+              "version": "[33.0.3, )"
+            },
             "MySqlConnector": {
               "target": "Package",
               "version": "[1.2.1, )"
@@ -192,6 +212,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.6.1, )"
             }
           },
           "imports": [
@@ -250,13 +274,17 @@
               "target": "Package",
               "version": "[1.4.0, )"
             },
+            "FluentFTP": {
+              "target": "Package",
+              "version": "[33.0.3, )"
+            },
             "MySqlConnector": {
               "target": "Package",
               "version": "[1.2.1, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.5.3.2, )"
+              "version": "[1.6.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
@@ -312,6 +340,10 @@
               "target": "Package",
               "version": "[1.4.0, )"
             },
+            "FluentFTP": {
+              "target": "Package",
+              "version": "[33.0.3, )"
+            },
             "MySqlConnector": {
               "target": "Package",
               "version": "[1.2.1, )"
@@ -324,7 +356,7 @@
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.5.3.2, )"
+              "version": "[1.6.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",

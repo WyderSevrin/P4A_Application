@@ -6,7 +6,7 @@
         <FlexLayout x:Name="GlobalFlexLayout" Direction="Column" BackgroundColor="DarkSlateGray">
             <Label x:Name="TitreLivre" TextColor="GhostWhite" BackgroundColor="DarkGreen" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FlexLayout.Grow="0.1" />
             <FlexLayout Direction="Row" FlexLayout.Grow="0.5">
-                <BoxView x:Name="BookImage" BackgroundColor="GhostWhite" FlexLayout.Grow="0.4"/>
+                
                 <StackLayout x:Name="RightPanelLayout" Orientation="Vertical" BackgroundColor="AntiqueWhite" FlexLayout.Grow="0.6">
                     <StackLayout x:Name="InteractUI" Orientation="Horizontal">
                         <Button x:Name="ReadButton" Text="Read" Clicked="ReadButton_Clicked" HorizontalOptions="Center"/>
@@ -21,18 +21,24 @@
                             </Picker.Items>
                         </Picker>
                     </StackLayout>
-                    <Label x:Name="DescriptionLabel" TextColor="Black" FontSize="Large"/>
+                    <ScrollView>
+                        <Label x:Name="DescriptionLabel" TextColor="Black" FontSize="Large"/>
+                    </ScrollView>
                 </StackLayout>
             </FlexLayout>
             <StackLayout x:Name="CommentaryPanelLayout" Orientation="Vertical" FlexLayout.Grow="0.4">
                 <Label x:Name="CommentaryLabel" Text="Commentaire" TextColor="Black" FontSize="Title" FlexLayout.Grow="0.1"/>
+                <StackLayout FlowDirection="MatchParent" HorizontalOptions="StartAndExpand" Orientation="Horizontal" Padding="10,5">
+                    <Entry x:Name="CommentaryEntry" Placeholder="Entrer votre Commentaire" IsSpellCheckEnabled="True" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"/>
+                    <Button x:Name="CommentarySend" Clicked="SendCommentaire" Text="Envoyer" Padding="5" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
                 <ScrollView x:Name="ScrollingCommentary">
                     <StackLayout x:Name="CommentaryDisplayer" Orientation="Vertical">
 
                     </StackLayout>
                 </ScrollView>
             </StackLayout>
-            
+
         </FlexLayout>
     </ContentPage.Content>
 </ContentPage>

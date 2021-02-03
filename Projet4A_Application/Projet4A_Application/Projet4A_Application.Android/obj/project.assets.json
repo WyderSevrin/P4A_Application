@@ -21,6 +21,25 @@
           "lib/netstandard1.6/CoreFtp.dll": {}
         }
       },
+      "FluentFTP/33.0.3": {
+        "type": "package",
+        "dependencies": {
+          "System.Console": "4.3.0",
+          "System.IO": "4.3.0",
+          "System.Net.NameResolution": "4.3.0",
+          "System.Net.Security": "4.3.2",
+          "System.Net.Sockets": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Threading.Tasks": "4.3.0",
+          "System.Threading.Thread": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/FluentFTP.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/FluentFTP.dll": {}
+        }
+      },
       "Microsoft.Extensions.Caching.Abstractions/1.0.2": {
         "type": "package",
         "dependencies": {
@@ -237,7 +256,7 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "System.Console/4.0.0": {
+      "System.Console/4.3.0": {
         "type": "package",
         "compile": {
           "ref/MonoAndroid10/_._": {}
@@ -291,7 +310,7 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "System.IO/4.1.0": {
+      "System.IO/4.3.0": {
         "type": "package",
         "compile": {
           "ref/MonoAndroid10/_._": {}
@@ -417,7 +436,7 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "System.Net.Security/4.3.1": {
+      "System.Net.Security/4.3.2": {
         "type": "package",
         "compile": {
           "ref/MonoAndroid10/_._": {}
@@ -436,7 +455,16 @@
           }
         }
       },
-      "System.Net.Sockets/4.1.0": {
+      "System.Net.Sockets/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/MonoAndroid10/_._": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/_._": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
           "ref/MonoAndroid10/_._": {}
@@ -499,7 +527,7 @@
           "lib/MonoAndroid10/_._": {}
         }
       },
-      "System.Runtime/4.1.0": {
+      "System.Runtime/4.3.0": {
         "type": "package",
         "compile": {
           "ref/MonoAndroid10/_._": {}
@@ -666,6 +694,15 @@
         }
       },
       "System.Threading.Tasks/4.3.0": {
+        "type": "package",
+        "compile": {
+          "ref/MonoAndroid10/_._": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/_._": {}
+        }
+      },
+      "System.Threading.Thread/4.3.0": {
         "type": "package",
         "compile": {
           "ref/MonoAndroid10/_._": {}
@@ -1442,12 +1479,16 @@
           "build/monoandroid90/Xamarin.Android.Support.ViewPager.targets": {}
         }
       },
-      "Xamarin.Essentials/1.5.3.2": {
+      "Xamarin.Essentials/1.6.1": {
         "type": "package",
         "dependencies": {
+          "System.Numerics.Vectors": "4.5.0",
           "Xamarin.Android.Support.Compat": "28.0.0.3",
           "Xamarin.Android.Support.CustomTabs": "28.0.0.3"
         },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
         "compile": {
           "lib/monoandroid90/Xamarin.Essentials.dll": {}
         },
@@ -1488,7 +1529,9 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "CoreFtp": "1.4.0",
-          "MySqlConnector": "1.2.1"
+          "FluentFTP": "33.0.3",
+          "MySqlConnector": "1.2.1",
+          "Xamarin.Essentials": "1.6.1"
         },
         "compile": {
           "bin/placeholder/Communication.dll": {}
@@ -1502,7 +1545,9 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Communication": "1.0.0",
-          "Modeles": "1.0.0"
+          "FluentFTP": "33.0.3",
+          "Modeles": "1.0.0",
+          "Xamarin.Essentials": "1.6.1"
         },
         "compile": {
           "bin/placeholder/Control.dll": {}
@@ -1517,7 +1562,9 @@
         "dependencies": {
           "Communication": "1.0.0",
           "CoreFtp": "1.4.0",
-          "MySqlConnector": "1.2.1"
+          "FluentFTP": "33.0.3",
+          "MySqlConnector": "1.2.1",
+          "Xamarin.Essentials": "1.6.1"
         },
         "compile": {
           "bin/placeholder/Modeles.dll": {}
@@ -1532,8 +1579,9 @@
         "dependencies": {
           "Control": "1.0.0",
           "CoreFtp": "1.4.0",
+          "FluentFTP": "33.0.3",
           "MySqlConnector": "1.2.1",
-          "Xamarin.Essentials": "1.5.3.2",
+          "Xamarin.Essentials": "1.6.1",
           "Xamarin.Forms": "4.6.0.1141"
         },
         "compile": {
@@ -1557,6 +1605,35 @@
         "coreftp.nuspec",
         "lib/net452/CoreFtp.dll",
         "lib/netstandard1.6/CoreFtp.dll"
+      ]
+    },
+    "FluentFTP/33.0.3": {
+      "sha512": "kKjSRMhfpnjhPLHm7tEyCr7wxqbLVziyx2mxEcxbrRzUw23LCvEZYmktE/1NJU8yTemTcHyGAgH27q8hJN+tSw==",
+      "type": "package",
+      "path": "fluentftp/33.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "fluentftp.33.0.3.nupkg.sha512",
+        "fluentftp.nuspec",
+        "lib/net20/FluentFTP.dll",
+        "lib/net20/FluentFTP.xml",
+        "lib/net35/FluentFTP.dll",
+        "lib/net35/FluentFTP.xml",
+        "lib/net40/FluentFTP.dll",
+        "lib/net40/FluentFTP.xml",
+        "lib/net45/FluentFTP.dll",
+        "lib/net45/FluentFTP.xml",
+        "lib/netstandard1.4/FluentFTP.dll",
+        "lib/netstandard1.4/FluentFTP.xml",
+        "lib/netstandard1.6/FluentFTP.dll",
+        "lib/netstandard1.6/FluentFTP.xml",
+        "lib/netstandard2.0/FluentFTP.dll",
+        "lib/netstandard2.0/FluentFTP.xml",
+        "lib/netstandard2.1/FluentFTP.dll",
+        "lib/netstandard2.1/FluentFTP.xml",
+        "logo-nuget.png"
       ]
     },
     "Microsoft.Extensions.Caching.Abstractions/1.0.2": {
@@ -1984,12 +2061,13 @@
         "system.componentmodel.nuspec"
       ]
     },
-    "System.Console/4.0.0": {
-      "sha512": "qSKUSOIiYA/a0g5XXdxFcUFmv1hNICBD7QZ0QhGYVipPIhvpiydY8VZqr1thmCXvmn8aipMg64zuanB4eotK9A==",
+    "System.Console/4.3.0": {
+      "sha512": "DHDrIxiqk1h03m6khKWV2X8p/uvN79rgSqpilL6uzpmSfxfU5ng8VcPtW4qsDsQDHiTv6IPV9TmD5M/vElPNLg==",
       "type": "package",
-      "path": "system.console/4.0.0",
+      "path": "system.console/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2017,7 +2095,7 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.console.4.0.0.nupkg.sha512",
+        "system.console.4.3.0.nupkg.sha512",
         "system.console.nuspec"
       ]
     },
@@ -2342,10 +2420,10 @@
         "system.globalization.calendars.nuspec"
       ]
     },
-    "System.IO/4.1.0": {
-      "sha512": "3KlTJceQc3gnGIaHZ7UBZO26SHL1SHE4ddrmiwumFnId+CEHP+O8r386tZKaE6zlk5/mF8vifMBzHj9SaXN+mQ==",
+    "System.IO/4.3.0": {
+      "sha512": "3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
       "type": "package",
-      "path": "system.io/4.1.0",
+      "path": "system.io/4.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2419,7 +2497,7 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.io.4.1.0.nupkg.sha512",
+        "system.io.4.3.0.nupkg.sha512",
         "system.io.nuspec"
       ]
     },
@@ -2969,10 +3047,10 @@
         "system.net.primitives.nuspec"
       ]
     },
-    "System.Net.Security/4.3.1": {
-      "sha512": "qYnDntmrrHXUAhA+v2Kve8onMjJ2ZryQvx7kjGhW88c0IgA9B+q2M8b3l76HFBeotufDbAJfOvLEP32PS4XIKA==",
+    "System.Net.Security/4.3.2": {
+      "sha512": "xT2jbYpbBo3ha87rViHoTA6WdvqOAW37drmqyx/6LD8p7HEPT2qgdxoimRzWtPg8Jh4X5G9BV2seeTv4x6FYlA==",
       "type": "package",
-      "path": "system.net.security/4.3.1",
+      "path": "system.net.security/4.3.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2989,16 +3067,6 @@
         "ref/MonoTouch10/_._",
         "ref/net46/System.Net.Security.dll",
         "ref/netstandard1.3/System.Net.Security.dll",
-        "ref/netstandard1.3/System.Net.Security.xml",
-        "ref/netstandard1.3/de/System.Net.Security.xml",
-        "ref/netstandard1.3/es/System.Net.Security.xml",
-        "ref/netstandard1.3/fr/System.Net.Security.xml",
-        "ref/netstandard1.3/it/System.Net.Security.xml",
-        "ref/netstandard1.3/ja/System.Net.Security.xml",
-        "ref/netstandard1.3/ko/System.Net.Security.xml",
-        "ref/netstandard1.3/ru/System.Net.Security.xml",
-        "ref/netstandard1.3/zh-hans/System.Net.Security.xml",
-        "ref/netstandard1.3/zh-hant/System.Net.Security.xml",
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
@@ -3007,14 +3075,14 @@
         "runtimes/win/lib/net46/System.Net.Security.dll",
         "runtimes/win/lib/netstandard1.3/System.Net.Security.dll",
         "runtimes/win7/lib/netcore50/_._",
-        "system.net.security.4.3.1.nupkg.sha512",
+        "system.net.security.4.3.2.nupkg.sha512",
         "system.net.security.nuspec"
       ]
     },
-    "System.Net.Sockets/4.1.0": {
-      "sha512": "xAz0N3dAV/aR/9g8r0Y5oEqU1JRsz29F5EGb/WVHmX3jVSLqi2/92M5hTad2aNWovruXrJpJtgZ9fccPMG9uSw==",
+    "System.Net.Sockets/4.3.0": {
+      "sha512": "m6icV6TqQOAdgt5N/9I5KNpjom/5NFtkmGseEH+AK/hny8XrytLH3+b5M8zL/Ycg3fhIocFpUMyl/wpFnVRvdw==",
       "type": "package",
-      "path": "system.net.sockets/4.1.0",
+      "path": "system.net.sockets/4.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3045,8 +3113,55 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.net.sockets.4.1.0.nupkg.sha512",
+        "system.net.sockets.4.3.0.nupkg.sha512",
         "system.net.sockets.nuspec"
+      ]
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/System.Numerics.Vectors.dll",
+        "ref/net45/System.Numerics.Vectors.xml",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.5.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.ObjectModel/4.0.12": {
@@ -3435,10 +3550,10 @@
         "system.resources.resourcemanager.nuspec"
       ]
     },
-    "System.Runtime/4.1.0": {
-      "sha512": "v6c/4Yaa9uWsq+JMhnOFewrYkgdNHNG2eMKuNqRn8P733rNXeRCGvV5FkkjBXn2dbVkPXOsO0xjsEeM1q2zC0g==",
+    "System.Runtime/4.3.0": {
+      "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
       "type": "package",
-      "path": "system.runtime/4.1.0",
+      "path": "system.runtime/4.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3523,7 +3638,7 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.runtime.4.1.0.nupkg.sha512",
+        "system.runtime.4.3.0.nupkg.sha512",
         "system.runtime.nuspec"
       ]
     },
@@ -4348,6 +4463,46 @@
         "ref/xamarinwatchos10/_._",
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
+      ]
+    },
+    "System.Threading.Thread/4.3.0": {
+      "sha512": "OHmbT+Zz065NKII/ZHcH9XO1dEuLGI1L2k7uYss+9C1jLxTC9kTZZuzUOyXHayRk+dft9CiDf3I/QZ0t8JKyBQ==",
+      "type": "package",
+      "path": "system.threading.thread/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Threading.Thread.dll",
+        "lib/netcore50/_._",
+        "lib/netstandard1.3/System.Threading.Thread.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Threading.Thread.dll",
+        "ref/netstandard1.3/System.Threading.Thread.dll",
+        "ref/netstandard1.3/System.Threading.Thread.xml",
+        "ref/netstandard1.3/de/System.Threading.Thread.xml",
+        "ref/netstandard1.3/es/System.Threading.Thread.xml",
+        "ref/netstandard1.3/fr/System.Threading.Thread.xml",
+        "ref/netstandard1.3/it/System.Threading.Thread.xml",
+        "ref/netstandard1.3/ja/System.Threading.Thread.xml",
+        "ref/netstandard1.3/ko/System.Threading.Thread.xml",
+        "ref/netstandard1.3/ru/System.Threading.Thread.xml",
+        "ref/netstandard1.3/zh-hans/System.Threading.Thread.xml",
+        "ref/netstandard1.3/zh-hant/System.Threading.Thread.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.thread.4.3.0.nupkg.sha512",
+        "system.threading.thread.nuspec"
       ]
     },
     "System.Threading.Timer/4.0.1": {
@@ -5299,10 +5454,10 @@
         "xamarin.android.support.viewpager.nuspec"
       ]
     },
-    "Xamarin.Essentials/1.5.3.2": {
-      "sha512": "BSLgDJUOPFRwTpQaftM+s4qb/MsTjrqXulEYDOcK6KF3i0Orf75zo3RwRfqnQ8WfpoEFxW/v0jgcPWCvOMgHxg==",
+    "Xamarin.Essentials/1.6.1": {
+      "sha512": "gG1Bp4j4bpJQ0dp9MeBJQJ9c8xULauIlhc7Cx5Qw4J2K1c+4Glq5n+gkb9Pm0UA/CevXVqLK5ZXmZkuYI52FgA==",
       "type": "package",
-      "path": "xamarin.essentials/1.5.3.2",
+      "path": "xamarin.essentials/1.6.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -5336,6 +5491,9 @@
         "lib/xamarinios10/Xamarin.Essentials.dll",
         "lib/xamarinios10/Xamarin.Essentials.pdb",
         "lib/xamarinios10/Xamarin.Essentials.xml",
+        "lib/xamarinmac20/Xamarin.Essentials.dll",
+        "lib/xamarinmac20/Xamarin.Essentials.pdb",
+        "lib/xamarinmac20/Xamarin.Essentials.xml",
         "lib/xamarintvos10/Xamarin.Essentials.dll",
         "lib/xamarintvos10/Xamarin.Essentials.pdb",
         "lib/xamarintvos10/Xamarin.Essentials.xml",
@@ -5343,7 +5501,7 @@
         "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
         "lib/xamarinwatchos10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.5.3.2.nupkg.sha512",
+        "xamarin.essentials.1.6.1.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
@@ -5684,9 +5842,10 @@
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
       "CoreFtp >= 1.4.0",
+      "FluentFTP >= 33.0.3",
       "MySqlConnector >= 1.2.1",
       "Projet4A_Application >= 1.0.0",
-      "Xamarin.Essentials >= 1.5.3.2",
+      "Xamarin.Essentials >= 1.6.1",
       "Xamarin.Forms >= 4.6.0.1141"
     ]
   },
@@ -5736,13 +5895,17 @@
             "target": "Package",
             "version": "[1.4.0, )"
           },
+          "FluentFTP": {
+            "target": "Package",
+            "version": "[33.0.3, )"
+          },
           "MySqlConnector": {
             "target": "Package",
             "version": "[1.2.1, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.5.3.2, )"
+            "version": "[1.6.1, )"
           },
           "Xamarin.Forms": {
             "target": "Package",

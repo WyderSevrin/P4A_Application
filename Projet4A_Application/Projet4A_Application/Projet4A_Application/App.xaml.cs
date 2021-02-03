@@ -11,8 +11,7 @@ namespace Projet4A_Application
         public App()
         {
             InitializeComponent();
-
-
+            this.control = new Controleur();
             MainPage = new NavigationPage(new MainPage(control));
         }
 

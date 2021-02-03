@@ -26,15 +26,16 @@ namespace Projet4A_Application
 
         private async void OnClickUser(object sender, EventArgs e)
         {
+            int userID = int.Parse(CodeEntry.Text);
             var user = new Utilisateur();
-            var bibliotheque = new Bibliotheque(control);
+            var bibliotheque = new Bibliotheque(this.control);
             bibliotheque.BindingContext = user;
             await Navigation.PushAsync(bibliotheque);
         }
 
         private async void OnClickUserless(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Bibliotheque(control));
+            await Navigation.PushAsync(new Bibliotheque(this.control));
         }
 
         private async void OnSettingsClick(object sender, EventArgs e)

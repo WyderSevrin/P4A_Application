@@ -1,4 +1,5 @@
 ﻿using Control;
+using Modeles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,11 +15,17 @@ namespace Projet4A_Application
     public partial class Bibliotheque : ContentPage
     {
         private Controleur control;
+        private List<Livre> listeDesLivres;
+        private Livre selectedBook;
+
 
         public Bibliotheque(Controleur control)
         {
             InitializeComponent();
             this.control = control;
+            this.control.updateListLivre();
+            this.listeDesLivres = this.control.getBibliotheque();
+            setStack(this.listeDesLivres);
             setTheme();
         }
 
@@ -26,7 +33,8 @@ namespace Projet4A_Application
         {
             //Write the code of your page here
             setTheme();
-            setStack();
+            this.listeDesLivres = this.control.getBibliotheque();
+            setStack(this.listeDesLivres);
             base.OnAppearing();
         }
 
@@ -37,7 +45,15 @@ namespace Projet4A_Application
 
         private async void GoReadPage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Profile_Livre(control));
+            var selectedBookTitle = ((Button)sender).ClassId;
+            for (int i = 0; i < listeDesLivres.Count; i++)
+            {
+                if (listeDesLivres[i].id.ToString() == selectedBookTitle)
+                {
+                    this.selectedBook = this.listeDesLivres[i];
+                }
+            }
+            await Navigation.PushAsync(new Profile_Livre(control,this.selectedBook));
         }
 
         private async void HtmlTestClicked(object sender, EventArgs e)
@@ -47,7 +63,17 @@ namespace Projet4A_Application
 
         private void SearchButton_Clicked(object sender, EventArgs e)
         {
-            setStack();
+            if (NameEntry.Text == null || NameEntry.Text == "")
+            {
+                setStack(this.listeDesLivres);
+                //this.control.CurrentBookStack = this.control.Bibliotheque;
+            }
+            else
+            {
+                //setStack(control.searchLivreByNom(NameEntry.Text.ToString()));
+                //this.control.CurrentBookStack = control.searchLivreByNom(NameEntry.Text.ToString());
+            }
+            
         }
 
         private void setTheme()
@@ -62,14 +88,20 @@ namespace Projet4A_Application
             }
         }
 
-        private void setStack()
+        private void setStack(List<Livre> livres)
         {
             StackTest.Children.Clear();
 
-
-
-            for (int i = 0; i < 100; i++)
+            Console.WriteLine("\n \n ===============    Test    ================");
+            foreach (Livre l in livres)
             {
+                Console.WriteLine("Livre n° "+l.id +" Nom : "+l.titre);
+            }
+
+
+            for (int i = 0; i < livres.Count(); i++)
+            {
+                //Console.WriteLine("titre du livre : "+ livre[i].titre);
                 var flexLaytest = new FlexLayout()
                 {
 
@@ -81,12 +113,13 @@ namespace Projet4A_Application
                     Text = "Acceder",
                     Margin = new Thickness(10, 0, 10, 0),
                     FontSize = Device.GetNamedSize(NamedSize.Body, typeof(Label)),
-                    WidthRequest = this.Width/3
+                    WidthRequest = this.Width / 3,
+                    ClassId = this.listeDesLivres[i].id.ToString()
                 };
 
                 var TitreLivre = new Label
                 {
-                    Text = "Nom du livre", //Recuperer le nom du livre dans une bdd
+                    Text = livres[i].titre, //Recuperer le nom du livre dans une bdd
                     Margin = new Thickness(10, 0, 10, 0),
                     FontSize = Device.GetNamedSize(NamedSize.Body, typeof(Label)),
                     WidthRequest = this.Width / 3
@@ -94,7 +127,7 @@ namespace Projet4A_Application
 
                 var NomAuteur = new Label
                 {
-                    Text = "Nom de l'auteur",  //Recuperer le nom de l'auteur dans une bdd
+                    Text = livres[i].auteur,  //Recuperer le nom de l'auteur dans une bdd
                     Margin = new Thickness(10, 0, 10, 0),
                     FontSize = Device.GetNamedSize(NamedSize.Body, typeof(Label)),
                     WidthRequest = this.Width / 3
@@ -124,6 +157,29 @@ namespace Projet4A_Application
                 StackTest.Children.Add(flexLaytest);
 
             }
+        }
+        private void GenreChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            //List<Livre> listLivre = control.searchLivreByGenre(Genre_Picker.SelectedItem.ToString());
+            //setStack(listLivre);
+            //this.control.CurrentBookStack = listLivre;
+        }
+
+        private void MouvementChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            //List<Livre> listLivre = control.searchLivreByGenre(Mouvement_Picker.SelectedItem.ToString());
+            //setStack(listLivre);
+            //this.control.CurrentBookStack = listLivre;
+        }
+
+        private void FavCheckBoxChanged(object sender, CheckedChangedEventArgs e)
+        {
+
+        }
+
+        private void OrdreChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+
         }
     }
 }

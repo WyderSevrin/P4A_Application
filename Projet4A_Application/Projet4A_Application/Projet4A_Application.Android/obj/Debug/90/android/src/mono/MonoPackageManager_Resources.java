@@ -4,6 +4,7 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "Projet4A_Application.Android.dll" comes first in this list. */
 		"Projet4A_Application.Android.dll",
 		"CoreFtp.dll",
+		"FluentFTP.dll",
 		"FormsViewGroup.dll",
 		"Microsoft.Extensions.Caching.Abstractions.dll",
 		"Microsoft.Extensions.Caching.Memory.dll",
@@ -61,5 +62,5 @@ public class MonoPackageManager_Resources {
 	};
 	public static String[] Dependencies = new String[]{
 	};
-	public static String ApiPackageName = "Mono.Android.Platform.ApiLevel_28";
+	public static String ApiPackageName = null;
 }

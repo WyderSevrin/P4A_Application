@@ -31,7 +31,8 @@ namespace Projet4A_Application.Droid
 			{
 				var customWebView = Element as CustomWebView;
 				Control.Settings.AllowUniversalAccessFromFileURLs = true;
-				Control.LoadUrl(string.Format("file:///android_asset/pdfjs/web/viewer.html?file={0}", string.Format("file:///android_asset/{0}", WebUtility.UrlEncode(customWebView.Uri))));
+				//Control.LoadUrl(string.Format("file:///android_asset/pdfjs/web/viewer.html?file={0}", string.Format("file:///android_asset/{0}", WebUtility.UrlEncode(customWebView.Uri))));
+				Control.LoadUrl(string.Format("file:///android_asset/pdfjs/web/viewer.html?file={0}", string.Format("file:///{0}", WebUtility.UrlEncode(customWebView.Uri))));
 			}
 		}
 	}
