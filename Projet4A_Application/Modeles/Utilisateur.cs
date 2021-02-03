@@ -24,11 +24,6 @@ namespace Modeles
         public Utilisateur()
         {
         }
-
-        public Utilisateur(int id)
-        {
-            this._id = id;
-        }
         //private List<Livre> favories { get; set; }
 
 

@@ -26,22 +26,11 @@ namespace Projet4A_Application
 
         private async void OnClickUser(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             int userID = int.Parse(CodeEntry.Text);
             var user = new Utilisateur();
             var bibliotheque = new Bibliotheque(this.control);
             bibliotheque.BindingContext = user;
             await Navigation.PushAsync(bibliotheque);
-=======
-            if (CodeEntry.Text != null || CodeEntry.Text != "")
-            {
-                int userID = int.Parse(CodeEntry.Text);
-                var user = new Utilisateur(userID);
-                var bibliotheque = new Bibliotheque(control);
-                bibliotheque.BindingContext = user;
-                await Navigation.PushAsync(bibliotheque);
-            }
->>>>>>> 544e8856cbfdf030e7c21da0ebe6f4a992c6e2b2
         }
 
         private async void OnClickUserless(object sender, EventArgs e)
