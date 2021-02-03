@@ -4612,23 +4612,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sevrin\\.nuget\\packages\\": {},
+    "C:\\Users\\Mikrail\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj",
+      "projectUniqueName": "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj",
       "projectName": "Communication",
-      "projectPath": "C:\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj",
-      "packagesPath": "C:\\Users\\Sevrin\\.nuget\\packages\\",
-      "outputPath": "C:\\P4A_Application\\Projet4A_Application\\Communication\\obj\\",
+      "projectPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj",
+      "packagesPath": "C:\\Users\\Mikrail\\.nuget\\packages\\",
+      "outputPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Sevrin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mikrail\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -4686,7 +4686,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj": {}
+    "D:\\VS\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj": {}
   },
   "projects": {
-    "C:\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj": {
+    "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj",
+        "projectUniqueName": "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj",
         "projectName": "Communication",
-        "projectPath": "C:\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj",
-        "packagesPath": "C:\\Users\\Sevrin\\.nuget\\packages\\",
-        "outputPath": "C:\\P4A_Application\\Projet4A_Application\\Communication\\obj\\",
+        "projectPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj",
+        "packagesPath": "C:\\Users\\Mikrail\\.nuget\\packages\\",
+        "outputPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Sevrin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mikrail\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -75,24 +75,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\P4A_Application\\Projet4A_Application\\Control\\Control.csproj": {
+    "D:\\VS\\P4A_Application\\Projet4A_Application\\Control\\Control.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\P4A_Application\\Projet4A_Application\\Control\\Control.csproj",
+        "projectUniqueName": "D:\\VS\\P4A_Application\\Projet4A_Application\\Control\\Control.csproj",
         "projectName": "Control",
-        "projectPath": "C:\\P4A_Application\\Projet4A_Application\\Control\\Control.csproj",
-        "packagesPath": "C:\\Users\\Sevrin\\.nuget\\packages\\",
-        "outputPath": "C:\\P4A_Application\\Projet4A_Application\\Control\\obj\\",
+        "projectPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Control\\Control.csproj",
+        "packagesPath": "C:\\Users\\Mikrail\\.nuget\\packages\\",
+        "outputPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Control\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Sevrin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mikrail\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -106,11 +106,11 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj": {
-                "projectPath": "C:\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj"
+              "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj": {
+                "projectPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj"
               },
-              "C:\\P4A_Application\\Projet4A_Application\\Modeles\\Modeles.csproj": {
-                "projectPath": "C:\\P4A_Application\\Projet4A_Application\\Modeles\\Modeles.csproj"
+              "D:\\VS\\P4A_Application\\Projet4A_Application\\Modeles\\Modeles.csproj": {
+                "projectPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Modeles\\Modeles.csproj"
               }
             }
           }
@@ -149,24 +149,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\P4A_Application\\Projet4A_Application\\Modeles\\Modeles.csproj": {
+    "D:\\VS\\P4A_Application\\Projet4A_Application\\Modeles\\Modeles.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\P4A_Application\\Projet4A_Application\\Modeles\\Modeles.csproj",
+        "projectUniqueName": "D:\\VS\\P4A_Application\\Projet4A_Application\\Modeles\\Modeles.csproj",
         "projectName": "Modeles",
-        "projectPath": "C:\\P4A_Application\\Projet4A_Application\\Modeles\\Modeles.csproj",
-        "packagesPath": "C:\\Users\\Sevrin\\.nuget\\packages\\",
-        "outputPath": "C:\\P4A_Application\\Projet4A_Application\\Modeles\\obj\\",
+        "projectPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Modeles\\Modeles.csproj",
+        "packagesPath": "C:\\Users\\Mikrail\\.nuget\\packages\\",
+        "outputPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Modeles\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Sevrin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mikrail\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -180,8 +180,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj": {
-                "projectPath": "C:\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj"
+              "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj": {
+                "projectPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj"
               }
             }
           }
@@ -228,24 +228,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj": {
+    "D:\\VS\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj",
+        "projectUniqueName": "D:\\VS\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj",
         "projectName": "Projet4A_Application",
-        "projectPath": "C:\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj",
-        "packagesPath": "C:\\Users\\Sevrin\\.nuget\\packages\\",
-        "outputPath": "C:\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\obj\\",
+        "projectPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj",
+        "packagesPath": "C:\\Users\\Mikrail\\.nuget\\packages\\",
+        "outputPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Sevrin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mikrail\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -259,8 +259,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\P4A_Application\\Projet4A_Application\\Control\\Control.csproj": {
-                "projectPath": "C:\\P4A_Application\\Projet4A_Application\\Control\\Control.csproj"
+              "D:\\VS\\P4A_Application\\Projet4A_Application\\Control\\Control.csproj": {
+                "projectPath": "D:\\VS\\P4A_Application\\Projet4A_Application\\Control\\Control.csproj"
               }
             }
           }
@@ -311,7 +311,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

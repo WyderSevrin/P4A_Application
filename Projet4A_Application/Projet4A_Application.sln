@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projet4A_Application.Android", "Projet4A_Application\Projet4A_Application.Android\Projet4A_Application.Android.csproj", "{D88E0F28-AADC-43BF-8F70-049E71701BD0}"
 	ProjectSection(ProjectDependencies) = postProject
 		{012DCE10-545D-4293-9E69-3855838FB1DD} = {012DCE10-545D-4293-9E69-3855838FB1DD}
+		{CF5C1BD9-11C5-49EF-8A8A-E60A5CFCD30E} = {CF5C1BD9-11C5-49EF-8A8A-E60A5CFCD30E}
 		{7BF20EEA-96F6-4407-9617-BFEE843C3ACF} = {7BF20EEA-96F6-4407-9617-BFEE843C3ACF}
 	EndProjectSection
 EndProject
@@ -15,7 +16,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modeles", "Modeles\Modeles.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Communication", "Communication\Communication.csproj", "{012DCE10-545D-4293-9E69-3855838FB1DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Control", "Control\Control.csproj", "{CF5C1BD9-11C5-49EF-8A8A-E60A5CFCD30E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Control", "Control\Control.csproj", "{CF5C1BD9-11C5-49EF-8A8A-E60A5CFCD30E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

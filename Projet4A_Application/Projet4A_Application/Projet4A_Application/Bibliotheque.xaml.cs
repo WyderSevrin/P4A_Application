@@ -23,9 +23,13 @@ namespace Projet4A_Application
         {
             InitializeComponent();
             this.control = control;
+<<<<<<< HEAD
             this.control.updateListLivre();
             this.listeDesLivres = this.control.getBibliotheque();
             setStack(this.listeDesLivres);
+=======
+            this.control.CurrentBookStack = this.control.Bibliotheque;
+>>>>>>> 544e8856cbfdf030e7c21da0ebe6f4a992c6e2b2
             setTheme();
         }
 
@@ -33,8 +37,13 @@ namespace Projet4A_Application
         {
             //Write the code of your page here
             setTheme();
+<<<<<<< HEAD
             this.listeDesLivres = this.control.getBibliotheque();
             setStack(this.listeDesLivres);
+=======
+            setStack(control.Bibliotheque);
+            this.control.CurrentBookStack = this.control.Bibliotheque;
+>>>>>>> 544e8856cbfdf030e7c21da0ebe6f4a992c6e2b2
             base.OnAppearing();
         }
 
@@ -46,6 +55,7 @@ namespace Projet4A_Application
         private async void GoReadPage(object sender, EventArgs e)
         {
             var selectedBookTitle = ((Button)sender).ClassId;
+<<<<<<< HEAD
             for (int i = 0; i < listeDesLivres.Count; i++)
             {
                 if (listeDesLivres[i].id.ToString() == selectedBookTitle)
@@ -54,6 +64,16 @@ namespace Projet4A_Application
                 }
             }
             await Navigation.PushAsync(new Profile_Livre(control,this.selectedBook));
+=======
+            for (int i = 0; i<this.control.CurrentBookStack.Count; i++)
+            {
+                if (this.control.CurrentBookStack[i].titre == selectedBookTitle)
+                {
+                    this.control.SelectedBook = this.control.CurrentBookStack[i];
+                }
+            }
+            await Navigation.PushAsync(new Profile_Livre(control));
+>>>>>>> 544e8856cbfdf030e7c21da0ebe6f4a992c6e2b2
         }
 
         private async void HtmlTestClicked(object sender, EventArgs e)
@@ -63,6 +83,7 @@ namespace Projet4A_Application
 
         private void SearchButton_Clicked(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             if (NameEntry.Text == null || NameEntry.Text == "")
             {
                 setStack(this.listeDesLivres);
@@ -74,6 +95,17 @@ namespace Projet4A_Application
                 //this.control.CurrentBookStack = control.searchLivreByNom(NameEntry.Text.ToString());
             }
             
+=======
+            if (NameEntry.Text == null || NameEntry.Text == "") {
+                setStack(control.Bibliotheque);
+                this.control.CurrentBookStack = this.control.Bibliotheque;
+            }
+            else
+            {
+                setStack(control.searchLivreByNom(NameEntry.Text.ToString()));
+                this.control.CurrentBookStack = control.searchLivreByNom(NameEntry.Text.ToString());
+            }
+>>>>>>> 544e8856cbfdf030e7c21da0ebe6f4a992c6e2b2
         }
 
         private void setTheme()
@@ -88,7 +120,11 @@ namespace Projet4A_Application
             }
         }
 
+<<<<<<< HEAD
         private void setStack(List<Livre> livres)
+=======
+        private void setStack(List<Livre> livre)
+>>>>>>> 544e8856cbfdf030e7c21da0ebe6f4a992c6e2b2
         {
             StackTest.Children.Clear();
 
@@ -99,7 +135,11 @@ namespace Projet4A_Application
             }
 
 
+<<<<<<< HEAD
             for (int i = 0; i < livres.Count(); i++)
+=======
+            for (int i = 0; i < livre.Count; i++)
+>>>>>>> 544e8856cbfdf030e7c21da0ebe6f4a992c6e2b2
             {
                 //Console.WriteLine("titre du livre : "+ livre[i].titre);
                 var flexLaytest = new FlexLayout()
@@ -114,12 +154,20 @@ namespace Projet4A_Application
                     Margin = new Thickness(10, 0, 10, 0),
                     FontSize = Device.GetNamedSize(NamedSize.Body, typeof(Label)),
                     WidthRequest = this.Width / 3,
+<<<<<<< HEAD
                     ClassId = this.listeDesLivres[i].id.ToString()
+=======
+                    ClassId = livre[i].titre
+>>>>>>> 544e8856cbfdf030e7c21da0ebe6f4a992c6e2b2
                 };
 
                 var TitreLivre = new Label
                 {
+<<<<<<< HEAD
                     Text = livres[i].titre, //Recuperer le nom du livre dans une bdd
+=======
+                    Text = livre[i].titre, //Recuperer le nom du livre dans une bdd
+>>>>>>> 544e8856cbfdf030e7c21da0ebe6f4a992c6e2b2
                     Margin = new Thickness(10, 0, 10, 0),
                     FontSize = Device.GetNamedSize(NamedSize.Body, typeof(Label)),
                     WidthRequest = this.Width / 3
@@ -127,7 +175,11 @@ namespace Projet4A_Application
 
                 var NomAuteur = new Label
                 {
+<<<<<<< HEAD
                     Text = livres[i].auteur,  //Recuperer le nom de l'auteur dans une bdd
+=======
+                    Text = "Auteur",  //Recuperer le nom de l'auteur dans une bdd
+>>>>>>> 544e8856cbfdf030e7c21da0ebe6f4a992c6e2b2
                     Margin = new Thickness(10, 0, 10, 0),
                     FontSize = Device.GetNamedSize(NamedSize.Body, typeof(Label)),
                     WidthRequest = this.Width / 3
@@ -158,18 +210,33 @@ namespace Projet4A_Application
 
             }
         }
+<<<<<<< HEAD
         private void GenreChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
             //List<Livre> listLivre = control.searchLivreByGenre(Genre_Picker.SelectedItem.ToString());
             //setStack(listLivre);
             //this.control.CurrentBookStack = listLivre;
+=======
+
+        private void GenreChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            List<Livre> listLivre = control.searchLivreByGenre(Genre_Picker.SelectedItem.ToString());
+            setStack(listLivre);
+            this.control.CurrentBookStack = listLivre;
+>>>>>>> 544e8856cbfdf030e7c21da0ebe6f4a992c6e2b2
         }
 
         private void MouvementChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
+<<<<<<< HEAD
             //List<Livre> listLivre = control.searchLivreByGenre(Mouvement_Picker.SelectedItem.ToString());
             //setStack(listLivre);
             //this.control.CurrentBookStack = listLivre;
+=======
+            List<Livre> listLivre = control.searchLivreByGenre(Mouvement_Picker.SelectedItem.ToString());
+            setStack(listLivre);
+            this.control.CurrentBookStack = listLivre;
+>>>>>>> 544e8856cbfdf030e7c21da0ebe6f4a992c6e2b2
         }
 
         private void FavCheckBoxChanged(object sender, CheckedChangedEventArgs e)

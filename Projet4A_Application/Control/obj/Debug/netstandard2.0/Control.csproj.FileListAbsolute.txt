@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\P4A_Application\Projet4A_Application\Control\bin\Debug\netstandard2.0\Control.deps.json
 C:\P4A_Application\Projet4A_Application\Control\bin\Debug\netstandard2.0\Control.dll
 C:\P4A_Application\Projet4A_Application\Control\bin\Debug\netstandard2.0\Control.pdb
@@ -15,3 +16,19 @@ C:\P4A_Application\Projet4A_Application\Control\obj\Debug\netstandard2.0\Control
 C:\P4A_Application\Projet4A_Application\Control\obj\Debug\netstandard2.0\Control.csproj.CopyComplete
 C:\P4A_Application\Projet4A_Application\Control\obj\Debug\netstandard2.0\Control.dll
 C:\P4A_Application\Projet4A_Application\Control\obj\Debug\netstandard2.0\Control.pdb
+=======
+D:\VS\P4A_Application\Projet4A_Application\Control\bin\Debug\netstandard2.0\Control.deps.json
+D:\VS\P4A_Application\Projet4A_Application\Control\bin\Debug\netstandard2.0\Control.dll
+D:\VS\P4A_Application\Projet4A_Application\Control\bin\Debug\netstandard2.0\Control.pdb
+D:\VS\P4A_Application\Projet4A_Application\Control\bin\Debug\netstandard2.0\Communication.dll
+D:\VS\P4A_Application\Projet4A_Application\Control\bin\Debug\netstandard2.0\Modeles.dll
+D:\VS\P4A_Application\Projet4A_Application\Control\bin\Debug\netstandard2.0\Communication.pdb
+D:\VS\P4A_Application\Projet4A_Application\Control\bin\Debug\netstandard2.0\Modeles.pdb
+D:\VS\P4A_Application\Projet4A_Application\Control\obj\Debug\netstandard2.0\Control.csprojAssemblyReference.cache
+D:\VS\P4A_Application\Projet4A_Application\Control\obj\Debug\netstandard2.0\Control.AssemblyInfoInputs.cache
+D:\VS\P4A_Application\Projet4A_Application\Control\obj\Debug\netstandard2.0\Control.AssemblyInfo.cs
+D:\VS\P4A_Application\Projet4A_Application\Control\obj\Debug\netstandard2.0\Control.csproj.CoreCompileInputs.cache
+D:\VS\P4A_Application\Projet4A_Application\Control\obj\Debug\netstandard2.0\Control.csproj.CopyComplete
+D:\VS\P4A_Application\Projet4A_Application\Control\obj\Debug\netstandard2.0\Control.dll
+D:\VS\P4A_Application\Projet4A_Application\Control\obj\Debug\netstandard2.0\Control.pdb
+>>>>>>> 544e8856cbfdf030e7c21da0ebe6f4a992c6e2b2

@@ -67,6 +67,10 @@ namespace Projet4A_Application
                 CommentaryPanelLayout.BackgroundColor = Color.LightSteelBlue;
                 CommentaryLabel.TextColor = Color.Black;
                 ScrollingCommentary.BackgroundColor = Color.LightSteelBlue;
+                CommentarySend.TextColor = Color.Black;
+                CommentarySend.BackgroundColor = Color.LightGray;
+                CommentaryEntry.TextColor = Color.Black;
+                CommentaryEntry.PlaceholderColor = Color.Black;
             }
             else
             {
@@ -80,11 +84,16 @@ namespace Projet4A_Application
                 CommentaryPanelLayout.BackgroundColor = Color.DarkBlue;
                 CommentaryLabel.TextColor = Color.GhostWhite;
                 ScrollingCommentary.BackgroundColor = Color.DarkBlue;
+                CommentarySend.TextColor = Color.GhostWhite;
+                CommentarySend.BackgroundColor = Color.DarkSeaGreen;
+                CommentaryEntry.TextColor = Color.GhostWhite;
+                CommentaryEntry.PlaceholderColor = Color.GhostWhite;
             }
         }
 
         private async void ReadButton_Clicked(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             //Télécharger le livre
             this.control.downLoadLivre(this.livreToRead.id);
 
@@ -92,14 +101,25 @@ namespace Projet4A_Application
 
             //On passe à l'affichage
             await Navigation.PushAsync(new Lecture_Livre(this.control,this.livreToRead));
+=======
+            this.control.downLoadLivre(this.control.SelectedBook.id);
+            await Navigation.PushAsync(new Lecture_Livre());
+>>>>>>> 544e8856cbfdf030e7c21da0ebe6f4a992c6e2b2
         }
 
         public void setItem()
         {
+<<<<<<< HEAD
             String bookTitle = this.livreToRead.titre; //On recuperera le titre depuis la bdd  
             this.TitreLivre.Text = bookTitle;
 
             String bookDescription = this.livreToRead.resumer; //On recuperera le titre depuis la bdd  
+=======
+            String bookTitle = this.control.SelectedBook.titre; //On recuperera le titre depuis la bdd  
+            this.TitreLivre.Text = bookTitle;
+
+            String bookDescription = this.control.SelectedBook.resumer; //On recuperera le titre depuis la bdd  
+>>>>>>> 544e8856cbfdf030e7c21da0ebe6f4a992c6e2b2
             this.DescriptionLabel.Text = bookDescription;
 
             String NoteTitle = "5"; //On recupere la note moyenne depuis la bdd
@@ -117,20 +137,33 @@ namespace Projet4A_Application
             this.CommentaryDisplayer.Children.Clear();
             
 
+<<<<<<< HEAD
             for (int i = 0; i < this.listCommentaire.Count(); i++)
+=======
+
+            for (int i = 0; i < this.control.Commentaires.Count; i++)
+>>>>>>> 544e8856cbfdf030e7c21da0ebe6f4a992c6e2b2
             {
 
 
                 var UserPseudo = new Label()
                 {
+<<<<<<< HEAD
                     Text = this.control.getAuteurCommentaire(this.listCommentaire[i].idUtilisateur.ToString()), //Recuperer le pseudo de la personne qui commente dans la bdd
+=======
+                    Text = this.control.Commentaires[i].titre, //Recuperer le pseudo de la personne qui commente dans la bdd
+>>>>>>> 544e8856cbfdf030e7c21da0ebe6f4a992c6e2b2
                     Margin = new Thickness(0, 0, 0, 0),
                     FontSize = Device.GetNamedSize(NamedSize.Body, typeof(Label))
                 };
 
                 var Commentary = new Label
                 {
+<<<<<<< HEAD
                     Text = this.listCommentaire[i].contenu, //Recuperer le nom du livre dans une bdd
+=======
+                    Text = this.control.Commentaires[i].contenu, //Recuperer le nom du livre dans une bdd
+>>>>>>> 544e8856cbfdf030e7c21da0ebe6f4a992c6e2b2
                     Margin = new Thickness(0, 0, 0, 0),
                     FontSize = Device.GetNamedSize(NamedSize.Body, typeof(Label))
                 };
@@ -163,5 +196,14 @@ namespace Projet4A_Application
             }
         }
 
+        private void SendCommentaire(object sender, EventArgs e)
+        {
+            if (this.CommentaryEntry.Text == "" || this.CommentaryEntry.Text == "")
+            {
+                String CommentaireToSend = this.CommentaryEntry.Text;
+                //Fonction pour envoyer un commentaire
+                this.CommentaryEntry.Text = "";
+            }
+        }
     }
 }

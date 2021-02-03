@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\P4A_Application\Projet4A_Application\Communication\bin\Debug\netstandard2.0\Communication.deps.json
 C:\P4A_Application\Projet4A_Application\Communication\bin\Debug\netstandard2.0\Communication.dll
 C:\P4A_Application\Projet4A_Application\Communication\bin\Debug\netstandard2.0\Communication.pdb
@@ -19,3 +20,14 @@ C:\P4A_Application\Projet4A_Application\Communication\obj\Debug\netstandard2.0\C
 C:\P4A_Application\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.dll
 C:\P4A_Application\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.pdb
 C:\P4A_Application\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.csprojAssemblyReference.cache
+=======
+D:\VS\P4A_Application\Projet4A_Application\Communication\bin\Debug\netstandard2.0\Communication.deps.json
+D:\VS\P4A_Application\Projet4A_Application\Communication\bin\Debug\netstandard2.0\Communication.dll
+D:\VS\P4A_Application\Projet4A_Application\Communication\bin\Debug\netstandard2.0\Communication.pdb
+D:\VS\P4A_Application\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.csprojAssemblyReference.cache
+D:\VS\P4A_Application\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.AssemblyInfoInputs.cache
+D:\VS\P4A_Application\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.AssemblyInfo.cs
+D:\VS\P4A_Application\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.csproj.CoreCompileInputs.cache
+D:\VS\P4A_Application\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.dll
+D:\VS\P4A_Application\Projet4A_Application\Communication\obj\Debug\netstandard2.0\Communication.pdb
+>>>>>>> 544e8856cbfdf030e7c21da0ebe6f4a992c6e2b2

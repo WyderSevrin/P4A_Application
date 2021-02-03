@@ -13,10 +13,18 @@ namespace Control
         private FTP ftpManager;
         private Fabrique fabrique;
         //private SQL_constante;
+<<<<<<< HEAD
         private List<Livre> bibliotheque;
         public List<Commentaire> commentaires;
 
         //private Utilisateur utilisateur { get; set; }
+=======
+        public List<Livre> Bibliotheque { get; set; }
+        public List<Commentaire> Commentaires { get; set; }
+        private Utilisateur utilisateur { get; set; }
+        public Livre SelectedBook { get; set; }
+        public List<Livre> CurrentBookStack { get; set; }
+>>>>>>> 544e8856cbfdf030e7c21da0ebe6f4a992c6e2b2
 
         public Controleur()
         {
