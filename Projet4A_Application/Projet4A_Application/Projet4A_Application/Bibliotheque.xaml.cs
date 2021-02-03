@@ -78,13 +78,14 @@ namespace Projet4A_Application
 
         private void setTheme()
         {
+            this.biblio.BackgroundColor= Color.FromHex("#2C5441");
             if (UserSettings.DarkTheme == false)
             {
                 ScrollingItem.BackgroundColor = Color.AntiqueWhite;
             }
             else
             {
-                ScrollingItem.BackgroundColor = Color.DarkSlateBlue;
+                ScrollingItem.BackgroundColor = Color.FromHex("#3D5080");
             }
         }
 

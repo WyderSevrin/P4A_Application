@@ -24,8 +24,8 @@ namespace Projet4A_Application
             InitializeComponent();
             this.control = control;
             this.livreToRead = livreToRead;
-
-  
+            this.lecture.BackgroundColor = Color.FromHex("#2C5441");
+            //Color.FromHex("#2C5441");
 
             String bookTitle = this.livreToRead.titre;  //Variable qui recuperera le nom du livre dans la bdd
             this.Title.Text = bookTitle;

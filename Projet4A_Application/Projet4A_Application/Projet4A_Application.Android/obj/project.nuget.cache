@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v4FYZ3hG9kmeps3d9WOyle1O/kwQzJZb/z85a1+9pVjjO/fGlrRbyG1j8IdOV6xrbU2iDWi3/0M4wZatRBlT2w==",
+  "dgSpecHash": "hicuzZsQZVjq2d/Ey1DX/N9qwsBZnexYuHW9onbswD5O4uoIZF2sbyob1aKqZAvgKz0UrRnZ2yQOR2NfIFUbWA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sevrin\\Desktop\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\Projet4A_Application.Android.csproj",
+  "projectFilePath": "C:\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\Projet4A_Application.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sevrin\\.nuget\\packages\\coreftp\\1.4.0\\coreftp.1.4.0.nupkg.sha512",
     "C:\\Users\\Sevrin\\.nuget\\packages\\fluentftp\\33.0.3\\fluentftp.33.0.3.nupkg.sha512",

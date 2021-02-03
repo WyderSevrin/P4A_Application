@@ -20,6 +20,7 @@ namespace Projet4A_Application
             InitializeComponent();
             setTheme();
             this.control = control;
+    
         }
 
         private void OnClairClick(object sender, EventArgs e)
@@ -28,7 +29,7 @@ namespace Projet4A_Application
             {
                 UserSettings.DarkTheme = false;
             }
-            Full_Layout.BackgroundColor = Color.LightGray;
+            Full_Layout.BackgroundColor = Color.FromHex("#C7D7FF");
         }
 
         private void OnSombreClick(object sender, EventArgs e)
@@ -37,18 +38,19 @@ namespace Projet4A_Application
             {
                 UserSettings.DarkTheme = true;
             }
-            Full_Layout.BackgroundColor = Color.DarkSlateBlue;
+            Full_Layout.BackgroundColor = Color.FromHex("#3D2080");
         }
 
         public void setTheme()
         {
+            this.parametre.BackgroundColor = Color.FromHex("#2C5441");
             if (UserSettings.DarkTheme == false)
             {
-                Full_Layout.BackgroundColor = Color.LightGray;
+                Full_Layout.BackgroundColor = Color.FromHex("#C7D7FF");
             }
             else
             {
-                Full_Layout.BackgroundColor = Color.DarkSlateBlue;
+                Full_Layout.BackgroundColor = Color.FromHex("#3D2080");
             }
         }
 

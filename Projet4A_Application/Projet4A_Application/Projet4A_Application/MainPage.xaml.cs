@@ -47,7 +47,8 @@ namespace Projet4A_Application
         {
             if (UserSettings.DarkTheme == false)
             {
-                this.BackgroundColor = Color.LightYellow;
+                this.BackgroundColor = Color.FromHex("#C7D7FF");
+                EBiblioLayout.BackgroundColor = Color.ForestGreen;
                 CodeEntry.BackgroundColor = Color.LightGray;
                 CodeEntry.PlaceholderColor = Color.Black;
                 NextButton.BackgroundColor = Color.LightGray;
@@ -59,14 +60,15 @@ namespace Projet4A_Application
             }
             else
             {
-                this.BackgroundColor = Color.DarkSlateGray;
-                CodeEntry.BackgroundColor = Color.DarkSeaGreen;
+                this.BackgroundColor = Color.FromHex("#3D5080");
+                EBiblioLayout.BackgroundColor = Color.FromHex("#6280CC");
+                CodeEntry.BackgroundColor = Color.FromHex("#6336B80");
                 CodeEntry.PlaceholderColor = Color.GhostWhite;
-                NextButton.BackgroundColor = Color.DarkSeaGreen;
+                NextButton.BackgroundColor = Color.FromHex("#6336B80");
                 NextButton.TextColor = Color.GhostWhite;
-                InviteeButton.BackgroundColor = Color.DarkSeaGreen;
+                InviteeButton.BackgroundColor = Color.FromHex("#6336B80");
                 InviteeButton.TextColor = Color.GhostWhite;
-                SettingsButton.BackgroundColor = Color.DarkSeaGreen;
+                SettingsButton.BackgroundColor = Color.FromHex("#6336B80");
                 SettingsButton.TextColor = Color.GhostWhite;
             }
         }

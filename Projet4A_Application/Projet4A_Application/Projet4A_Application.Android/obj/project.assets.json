@@ -5856,11 +5856,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sevrin\\Desktop\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\Projet4A_Application.Android.csproj",
+      "projectUniqueName": "C:\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\Projet4A_Application.Android.csproj",
       "projectName": "Projet4A_Application.Android",
-      "projectPath": "C:\\Users\\Sevrin\\Desktop\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\Projet4A_Application.Android.csproj",
+      "projectPath": "C:\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\Projet4A_Application.Android.csproj",
       "packagesPath": "C:\\Users\\Sevrin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sevrin\\Desktop\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\obj\\",
+      "outputPath": "C:\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -5881,8 +5881,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\Sevrin\\Desktop\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj": {
-              "projectPath": "C:\\Users\\Sevrin\\Desktop\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj"
+            "C:\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj": {
+              "projectPath": "C:\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj"
             }
           }
         }

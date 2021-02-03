@@ -63,10 +63,12 @@ namespace Projet4A_Application
                 ReadButton.BackgroundColor = Color.LightGray;
                 NoteItem.TitleColor = Color.Black;
                 DescriptionLabel.TextColor = Color.Black;
-                RightPanelLayout.BackgroundColor = Color.AntiqueWhite;
-                CommentaryPanelLayout.BackgroundColor = Color.LightSteelBlue;
+                RightPanelLayout.BackgroundColor = Color.FromHex("#019855");
+                CommentaryPanelLayout.BackgroundColor = Color.FromHex("#E6F0D5");
                 CommentaryLabel.TextColor = Color.Black;
-                ScrollingCommentary.BackgroundColor = Color.LightSteelBlue;
+                ScrollingCommentary.BackgroundColor = Color.FromHex("#E6F0D5");
+                this.CommentaryEntry.PlaceholderColor = Color.Black;
+                this.CommentaryEntry.TextColor = Color.Black;
             }
             else
             {
@@ -74,12 +76,14 @@ namespace Projet4A_Application
                 FavButton.BackgroundColor = Color.DarkSeaGreen;
                 ReadButton.TextColor = Color.GhostWhite;
                 ReadButton.BackgroundColor = Color.DarkSeaGreen;
-                NoteItem.TitleColor = Color.GhostWhite;
+                NoteItem.TitleColor = Color.Yellow;
                 DescriptionLabel.TextColor = Color.GhostWhite;
-                RightPanelLayout.BackgroundColor = Color.DarkSlateBlue;
-                CommentaryPanelLayout.BackgroundColor = Color.DarkBlue;
+                RightPanelLayout.BackgroundColor = Color.FromHex("#3D5080");
+                CommentaryPanelLayout.BackgroundColor = Color.FromHex("#636B80");
                 CommentaryLabel.TextColor = Color.GhostWhite;
-                ScrollingCommentary.BackgroundColor = Color.DarkBlue;
+                ScrollingCommentary.BackgroundColor = Color.FromHex("#7AA0FF");
+                this.CommentaryEntry.PlaceholderColor = Color.White;
+                this.CommentaryEntry.TextColor = Color.White;
             }
         }
 
@@ -98,7 +102,7 @@ namespace Projet4A_Application
         {
             String bookTitle = this.livreToRead.titre; //On recuperera le titre depuis la bdd  
             this.TitreLivre.Text = bookTitle;
-
+            this.TitreLivre.BackgroundColor = Color.FromHex("#2C5441");
             String bookDescription = this.livreToRead.resumer; //On recuperera le titre depuis la bdd  
             this.DescriptionLabel.Text = bookDescription;
 
@@ -137,13 +141,14 @@ namespace Projet4A_Application
 
                 if (UserSettings.DarkTheme == false)
                 {
-                    UserPseudo.BackgroundColor = Color.LightGray;
+                    UserPseudo.BackgroundColor = Color.FromHex("#E6F0D5");
                     UserPseudo.TextColor = Color.Black;
                     Commentary.TextColor = Color.Black;
+
                 }
                 else
                 {
-                    UserPseudo.BackgroundColor = Color.DarkSeaGreen;
+                    UserPseudo.BackgroundColor = Color.FromHex("#6280CC");
                     UserPseudo.TextColor = Color.GhostWhite;
                     Commentary.TextColor = Color.GhostWhite;
                 }

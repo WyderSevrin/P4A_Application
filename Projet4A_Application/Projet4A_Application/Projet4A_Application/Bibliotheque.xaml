@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Projet4A_Application.Bibliotheque">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="DarkGreen">
+        <StackLayout x:Name="biblio" BackgroundColor="DarkGreen">
             <FlexLayout Direction="Row" AlignContent="Center" JustifyContent="SpaceBetween">
                 <Label Text="Bibliothèque" TextColor="White" FontSize="Title" FontAttributes="Bold" FlexLayout.AlignSelf="Center" Margin="10,0" Padding="0,10,0,0" />
                 <Button Text="Settings" FlexLayout.AlignSelf="End" Clicked="OnSettingsClick" Margin="10,10,10,0" />

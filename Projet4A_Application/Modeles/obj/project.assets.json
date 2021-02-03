@@ -4640,11 +4640,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sevrin\\Desktop\\Projet4A_Application\\Modeles\\Modeles.csproj",
+      "projectUniqueName": "C:\\P4A_Application\\Projet4A_Application\\Modeles\\Modeles.csproj",
       "projectName": "Modeles",
-      "projectPath": "C:\\Users\\Sevrin\\Desktop\\Projet4A_Application\\Modeles\\Modeles.csproj",
+      "projectPath": "C:\\P4A_Application\\Projet4A_Application\\Modeles\\Modeles.csproj",
       "packagesPath": "C:\\Users\\Sevrin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sevrin\\Desktop\\Projet4A_Application\\Modeles\\obj\\",
+      "outputPath": "C:\\P4A_Application\\Projet4A_Application\\Modeles\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -4664,8 +4664,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Sevrin\\Desktop\\Projet4A_Application\\Communication\\Communication.csproj": {
-              "projectPath": "C:\\Users\\Sevrin\\Desktop\\Projet4A_Application\\Communication\\Communication.csproj"
+            "C:\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj": {
+              "projectPath": "C:\\P4A_Application\\Projet4A_Application\\Communication\\Communication.csproj"
             }
           }
         }

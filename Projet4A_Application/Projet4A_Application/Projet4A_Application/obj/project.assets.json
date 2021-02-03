@@ -5014,11 +5014,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sevrin\\Desktop\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj",
+      "projectUniqueName": "C:\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj",
       "projectName": "Projet4A_Application",
-      "projectPath": "C:\\Users\\Sevrin\\Desktop\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj",
+      "projectPath": "C:\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application.csproj",
       "packagesPath": "C:\\Users\\Sevrin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sevrin\\Desktop\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\obj\\",
+      "outputPath": "C:\\P4A_Application\\Projet4A_Application\\Projet4A_Application\\Projet4A_Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -5038,8 +5038,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Sevrin\\Desktop\\Projet4A_Application\\Control\\Control.csproj": {
-              "projectPath": "C:\\Users\\Sevrin\\Desktop\\Projet4A_Application\\Control\\Control.csproj"
+            "C:\\P4A_Application\\Projet4A_Application\\Control\\Control.csproj": {
+              "projectPath": "C:\\P4A_Application\\Projet4A_Application\\Control\\Control.csproj"
             }
           }
         }
