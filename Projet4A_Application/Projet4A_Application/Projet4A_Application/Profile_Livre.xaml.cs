@@ -89,10 +89,15 @@ namespace Projet4A_Application
 
         private async void ReadButton_Clicked(object sender, EventArgs e)
         {
+           /* 
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                DependencyService.Get<Toast>().Show("Téléchargement du Livre");
+            });*/
+            // DependencyService.Get<Toast>().Show("Téléchargement du Livre");
+
             //Télécharger le livre
             this.control.downLoadLivre(this.livreToRead.id);
-
-
 
             //On passe à l'affichage
             await Navigation.PushAsync(new Lecture_Livre(this.control,this.livreToRead));

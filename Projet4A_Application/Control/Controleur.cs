@@ -93,10 +93,10 @@ namespace Control
         /// </summary>
         /// <param name="nom"></param>
         /// <returns></returns>
-        public List<Livre> searchLivreByNom(string nom)
+        public List<Livre> searchLivreByNom(string nom, List<Livre> listeDesLivres)
         {
             List<Livre> result = new List<Livre>();
-            foreach (Livre l in this.bibliotheque)
+            foreach (Livre l in listeDesLivres)
             {
                 if (l.titre == nom)
                 {
@@ -108,10 +108,10 @@ namespace Control
             return result;
         }
 
-        public List<Livre> searchLivreByGenre(string genre)
+        public List<Livre> searchLivreByGenre(string genre, List<Livre> listeDesLivres)
         {
             List<Livre> result = new List<Livre>();
-            foreach (Livre l in this.bibliotheque)
+            foreach (Livre l in listeDesLivres)
             {
                 if (l.genre == genre)
                 {
@@ -123,10 +123,10 @@ namespace Control
             return result;
         }
 
-        public List<Livre> searchLivreByMouvement(string mouv)
+        public List<Livre> searchLivreByMouvement(string mouv, List<Livre> listeDesLivres)
         {
             List<Livre> result = new List<Livre>();
-            foreach (Livre l in this.bibliotheque)
+            foreach (Livre l in listeDesLivres)
             {
                 if (l.mouvement == mouv)
                 {
@@ -136,6 +136,36 @@ namespace Control
             }
 
             return result;
+        }
+
+        public List<Livre> cleanDoublons(List<Livre> listDesLivres)
+        {
+            List<Livre> outpute = new List<Livre>();
+
+            foreach (Livre l in listDesLivres)
+            {
+                if (!bookExists(outpute, l))
+                {
+                    outpute.Add(l);
+                }
+
+            }
+            return outpute;
+        }
+
+        private bool bookExists(List<Livre> listDesLivres, Livre livre)
+        {
+            bool outpute = false;
+            foreach (Livre l in listDesLivres)
+            {
+                if (l.id == livre.id)
+                {
+                    outpute = true;
+                    break;
+                }
+            }
+
+            return outpute;
         }
 
         //Par ordre

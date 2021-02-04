@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration;
 using Xamarin.Forms.Xaml;
 
 namespace Projet4A_Application
@@ -63,16 +64,48 @@ namespace Projet4A_Application
 
         private void SearchButton_Clicked(object sender, EventArgs e)
         {
-            if (NameEntry.Text == null || NameEntry.Text == "")
+            
+            List<Livre> listeByName = new List<Livre>();
+            
+
+            if (NameEntry.Text != " " || NameEntry.Text != "")
             {
-                setStack(this.listeDesLivres);
-                //this.control.CurrentBookStack = this.control.Bibliotheque;
+                listeByName = control.searchLivreByNom(NameEntry.Text.ToString(), this.listeDesLivres);
+                this.listeDesLivres = listeByName;
             }
+            
+            /*
+
+            if (Genre_Picker.SelectedItem.ToString() != " " || Genre_Picker.SelectedItem.ToString() != "")
+            {
+                listeByName.AddRange( control.searchLivreByGenre(Genre_Picker.SelectedItem.ToString(), listeDesLivres));
+            }
+
+            if (Mouvement_Picker.SelectedItem.ToString() != " " || Mouvement_Picker.SelectedItem.ToString() != "")
+            {
+                listeByName.AddRange(control.searchLivreByMouvement(Genre_Picker.SelectedItem.ToString(), listeDesLivres));
+            }
+            */
+
+            //Clear les doublons
+
+            //listeByName = this.control.cleanDoublons(listeByName);
+
+            if (listeByName.Count > 0)
+            {
+                setStack(listeDesLivres);
+            }
+            /*
             else
             {
-                //setStack(control.searchLivreByNom(NameEntry.Text.ToString()));
-                //this.control.CurrentBookStack = control.searchLivreByNom(NameEntry.Text.ToString());
-            }
+        
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    DisplayAlert("Aucun livre trouver", "Chercher avec d'autres paramètres", "OK");
+                });
+                
+            }*/
+
             
         }
 
